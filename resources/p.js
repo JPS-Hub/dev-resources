@@ -1,5 +1,14 @@
-const { toolsAndUtilities, uiDesign, programming, jobs, assets, indieHacking } = require('../constants/categories')
-const { website } = require('../constants/links')
+const {
+    toolsAndUtilities,
+    uiDesign,
+    programming,
+    jobs,
+    assets,
+    indieHacking,
+    infrastructure,
+    community,
+} = require('../constants/categories')
+const { website, twitter, youtube, linkedin, facebook } = require('../constants/links')
 
 module.exports = [
     {
@@ -14,7 +23,7 @@ module.exports = [
     },
     {
         name: 'Palette List',
-        categories: [uiDesign.colorPalettes],
+        categories: [uiDesign.color],
         description: 'Palette List is a dynamic palette generator.',
         keywords: ['palette', 'colors', 'designer tools', 'developer tools', 'hex', 'rgb'],
         links: {
@@ -24,13 +33,27 @@ module.exports = [
     },
     {
         name: 'Paw',
-        categories: [programming.apiBuilding],
+        categories: [toolsAndUtilities.apiBuilding],
         description:
             'Paw is a full-featured HTTP client that lets you test and describe the APIs you build or consume. It has a beautiful native macOS interface to compose requests, inspect server responses, generate client code and export API definitions.',
         links: {
             [website]: 'https://paw.cloud/',
         },
         icon: 'https://cdn-static.paw.cloud/img/favicons/favicon-96x96-f769fad588.png',
+    },
+    {
+        name: 'pCloudy',
+        categories: [programming.testing],
+        description:
+            'Continuous testing platform that helps to speed up the app testing by enabling end to end continuous testing for enterprises.',
+        links: {
+            [website]: 'https://www.pcloudy.com/',
+            [twitter]: 'https://twitter.com/pcloudy_ssts',
+            [youtube]: 'https://www.youtube.com/c/pcloudy',
+            [linkedin]: 'https://www.linkedin.com/company/pcloudy-com/',
+            [facebook]: 'https://www.facebook.com/pcloudydotcom',
+        },
+        icon: 'https://www.pcloudy.com/favicon.ico',
     },
     {
         name: 'PeoplePerHour',
@@ -132,8 +155,18 @@ module.exports = [
         icon: 'https://polypane.app/icons/icon-96x96.png?v=5df5528946772487a6ab462ff2125f26',
     },
     {
+        name: 'PostgreSQL',
+        categories: [infrastructure.databases],
+        description:
+            'PostgreSQL is an enterprise-class open source database management system. It supports both SQL for relational and JSON for non-relational queries.',
+        links: {
+            [website]: 'https://www.postgresql.org/',
+        },
+        icon: 'https://www.postgresql.org/favicon.ico',
+    },
+    {
         name: 'Postman',
-        categories: [programming.apiBuilding],
+        categories: [toolsAndUtilities.apiBuilding],
         description:
             'Postman makes API development easy. Our platform offers the tools to simplify each step of the API building process and streamlines collaboration so you can create better APIs faster.',
         links: {
@@ -171,6 +204,16 @@ module.exports = [
         icon: 'https://www.programiz.com/sites/all/themes/programiz/assets/favicon.png',
     },
     {
+        name: 'Programming podcast',
+        categories: [programming.podcasts],
+        description:
+            'The "Programming" podcast with Minko Gechev is a weekly show that aims to make us better software engineers! With each new episode, you\'ll get exposed to a new idea in a brief and accessible way',
+        links: {
+            [website]: 'https://podcast.mgechev.com/',
+        },
+        icon: 'https://podcast.mgechev.com/favicon.ico',
+    },
+    {
         name: 'Project Euler',
         categories: [programming.codeChallenges],
         description: 'A website dedicated to the fascinating world of mathematics and programming.',
@@ -201,6 +244,16 @@ module.exports = [
             [website]: 'https://projectlearn.io/',
         },
         icon: 'https://projectlearn.io/projectlearn.png',
+    },
+    {
+        name: 'Proxies API',
+        categories: [toolsAndUtilities.webScraping],
+        description:
+            'Want to send custom headers? Want to run sticky sessions with a single IP? Want to scrape AJAX based content? We have you covered. You can customise almost all this in a single line of code, no matter the language you are using or the setup. Proxies API was created for developers by developers with the goal of making it dead easy to get started with zero coding overhead.',
+        links: {
+            [website]: 'www.proxiesapi.com',
+        },
+        icon: 'https://www.proxiesapi.com/assets/favicon.ico',
     },
     {
         name: 'Pttrns',
@@ -240,6 +293,17 @@ module.exports = [
             [website]: 'https://pttrns.com/',
         },
         icon: 'https://s3.amazonaws.com/pttrns-2-0-static/assets/img/favicons/favicon-96x96.png',
+    },
+    {
+        name: 'Pull Request Roulette',
+        categories: [community.hacktoberfest],
+        description:
+            'Web app to match up developers, with public pull requests (PRs) on Github, with people willing to comment on their PRs.',
+        links: {
+            [website]: 'http://www.pullrequestroulette.com/',
+        },
+        icon:
+            'http://www.pullrequestroulette.com/assets/favicon-c7222dcd8c2c148cbd4ee961fdb75431a0ff1399b2245da43057ee1d15a187b0.gif',
     },
     {
         name: 'Puppeteer',

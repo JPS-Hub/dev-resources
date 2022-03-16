@@ -5,8 +5,10 @@ const {
     indieHacking,
     jobs,
     infrastructure,
+    assets,
+    community,
 } = require('../constants/categories')
-const { website, youtube } = require('../constants/links')
+const { website, youtube, github, twitter, facebook, linkedin, discord, instagram } = require('../constants/links')
 
 module.exports = [
     {
@@ -108,7 +110,7 @@ module.exports = [
     },
     {
         name: 'Adobe Color',
-        categories: [uiDesign.colorPalettes],
+        categories: [uiDesign.color],
         description:
             'Create color palettes with the color wheel or image, browse thousands of color combinations from the Adobe Color community.',
         links: {
@@ -151,7 +153,7 @@ module.exports = [
     },
     {
         name: 'Airtable',
-        categories: [indieHacking.utilities],
+        categories: [indieHacking.utilities, infrastructure.databases, infrastructure.serverless],
         description:
             'Airtable is a low-code platform for building collaborative apps. Customize your workflow, collaborate, and achieve ambitious outcomes. Get started for free.',
         links: {
@@ -180,8 +182,28 @@ module.exports = [
         icon: 'https://angel.co/images/icons/iOS/UpdatedFavicon_72x72.png',
     },
     {
+        name: 'Angular DevTools',
+        description: 'Angular DevTools extends Chrome DevTools adding Angular specific debugging and profiling capabilities. You can use Angular DevTools to understand the structure of your application and preview the state of the directive and the component instances. To get insights into the execution of the application, you can use the profiler tab, which shows you the individual change detection cycles, what triggered them, and how much time Angular spent in them.',
+        categories: [toolsAndUtilities.browsersAndExtensions],
+        links: {
+            [website]: 'https://angular.io/guide/devtools',
+        },
+        icon: 'https://angular.io/assets/images/favicons/favicon-96x96.png',
+        keywords: ['dev tools', 'angular', 'profiler', 'profiling'],
+    },
+    {
+        name: 'Animista',
+        categories: [uiDesign.utilities],
+        description:
+            'Animista is a place where you can play with a collection of ready to use CSS animations, tweak them and download only those you will actually use.',
+        links: {
+            [website]: 'https://animista.net/',
+        },
+        icon: 'https://animista.net/favicon.ico',
+    },
+    {
         name: 'Apigee',
-        categories: [programming.apiBuilding],
+        categories: [toolsAndUtilities.apiBuilding],
         description:
             'Apigee, part of Google Cloud, helps leading companies design, secure, and scale application programming interfaces (APIs). Try Apigee Edge for free.',
         links: {
@@ -211,6 +233,34 @@ module.exports = [
         icon: 'https://app-mockup.com/icons/icon-96x96.png?v=59619132456a4be05090b0bf15d7fa12',
     },
     {
+        name: 'Appwrite',
+        categories: [toolsAndUtilities.apiBuilding, toolsAndUtilities.general],
+        description:
+            'Appwrite provides web and mobile developers with a set of easy-to-use and integrate REST APIs to manage their core backend needs.',
+        links: {
+            [website]: 'https://appwrite.io/',
+            [github]: 'https://github.com/appwrite/appwrite',
+            [twitter]: 'https://twitter.com/appwrite_io',
+            [facebook]: 'https://www.facebook.com/appwrite.io',
+            [linkedin]: 'https://www.linkedin.com/company/appwrite',
+            [discord]: 'https://appwrite.io/discord',
+        },
+        icon: 'https://appwrite.io/images/favicon.png',
+    },
+    {
+        name: 'Artify',
+        categories: [assets.illustrations, assets.logos],
+        description:
+            'Artify is an online and easy-to-use design editor that features thousands of customizable illustrations and template packs.',
+        links: {
+            [website]: 'https://www.artify.co/',
+            [twitter]: 'https://twitter.com/ArtifyCrew',
+            [instagram]: 'https://www.instagram.com/ArtifyCrew/',
+            [facebook]: 'https://www.facebook.com/ArtifyCrew',
+        },
+        icon: 'https://www.artify.co/images/landing/favicon.png',
+    },
+    {
         name: 'Atom',
         categories: [toolsAndUtilities.editorsAndExtensions],
         description:
@@ -230,6 +280,16 @@ module.exports = [
         icon: 'https://authenticjobs.com/wp-content/uploads/2020/04/cropped-aj-site-favicon-32x32.png',
     },
     {
+        name: 'AWS',
+        categories: [infrastructure.hosting, infrastructure.cloudComputing],
+        description:
+            'Amazon Web Services offers reliable, scalable, and  inexpensive cloud computing services. Free to join, pay only for what you use.',
+        links: {
+            [website]: 'https://aws.amazon.com/',
+        },
+        icon: 'https://a0.awsstatic.com/libra-css/images/site/touch-icon-ipad-144-smile.png',
+    },
+    {
         name: 'Awesome a11y',
         categories: [toolsAndUtilities.accessibility],
         description:
@@ -240,14 +300,23 @@ module.exports = [
         icon: 'https://github.githubassets.com/favicons/favicon-dark.svg',
     },
     {
-        name: 'AWS',
-        categories: [infrastructure.hosting],
-        description:
-            'Amazon Web Services offers reliable, scalable, and  inexpensive cloud computing services. Free to join, pay only for what you use.',
+        name: 'Awesome Courses',
+        categories: [programming.learn],
+        description: 'List of awesome university courses for learning Computer Science.',
         links: {
-            [website]: 'https://aws.amazon.com/',
+            [github]: 'https://github.com/prakhar1989/awesome-courses',
         },
-        icon: 'https://a0.awsstatic.com/libra-css/images/site/touch-icon-ipad-144-smile.png',
+        icon: 'https://github.githubassets.com/apple-touch-icon-114x114.png',
+    },
+    {
+        name: 'Awesome for Beginners',
+        categories: [community.hacktoberfest],
+        description:
+            'A list of awesome beginners-friendly projects. Contribute to MunGell/awesome-for-beginners development by creating an account on GitHub.',
+        links: {
+            [github]: 'https://github.com/mungell/awesome-for-beginners',
+        },
+        icon: 'https://github.githubassets.com/apple-touch-icon-114x114.png',
     },
     {
         name: 'Awwwards',

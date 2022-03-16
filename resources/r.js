@@ -2,14 +2,28 @@ const {
     toolsAndUtilities,
     programming,
     jobs,
-    readingAndWriting,
+    community,
     uiDesign,
     assets,
     infrastructure,
 } = require('../constants/categories')
-const { website } = require('../constants/links')
+const { website, twitter, linkedin, github, facebook, youtube, instagram, codepen } = require('../constants/links')
 
 module.exports = [
+    {
+        name: 'RapidAPI',
+        categories: [toolsAndUtilities.apiBuilding, toolsAndUtilities.general],
+        description:
+            'Use RapidAPI to Find, Connect, & Share 1000s of APIs using our Multi-cloud platform. Improve Developer Experience with API Design, Testing, Monitoring, & More!',
+        links: {
+            [website]: 'https://rapidapi.com/',
+            [facebook]: 'https://www.facebook.com/Rapid-API-860822767286196',
+            [twitter]: 'https://twitter.com/rapid_api',
+            [youtube]: 'https://www.youtube.com/channel/UCk-vgkXZUzwd5hmpQ2it9_g',
+            [linkedin]: 'https://www.linkedin.com/company/rapidapi',
+        },
+        icon: 'https://rapidapi.com/wp-content/uploads/2020/07/favicon-2.png',
+    },
     {
         name: 'Ratatype',
         categories: [toolsAndUtilities.typing],
@@ -20,6 +34,16 @@ module.exports = [
             [website]: 'https://www.ratatype.com/',
         },
         icon: 'https://www.ratatype.com/browser/safari/apple-touch-icon-76x76.png',
+    },
+    {
+        name: 'Ray.so',
+        categories: [programming.codeSnippets],
+        description:
+            'Turn your code into beautiful images. Choose from a range of syntax colors, hide or show the background, and toggle between a dark and light window.',
+        links: {
+            [website]: 'https://ray.so/',
+        },
+        icon: 'https://ray.so/img/icons/favicon-32x32.png',
     },
     {
         name: 'React 30',
@@ -72,6 +96,16 @@ module.exports = [
             'https://image.simplecastcdn.com/images/7672009f-32a0-470f-81b8-77a9748d560e/82cc2a41-1a7b-4c91-b6f0-a461c50830ed/simplecast-logo-32.jpg',
     },
     {
+        name: 'React Resources',
+        categories: [programming.javascript.react],
+        description:
+            'Keep up with the growing React ecosystem! We cover the latest React learning resources, libraries and jobs.',
+        links: {
+            [website]: 'https://reactresources.com/',
+        },
+        icon: 'https://reactresources.com/static/favicon.ico',
+    },
+    {
         name: 'React Suite',
         categories: [programming.uiKitsAndLibraries],
         description: 'A suite of React components, sensible UI design, and a friendly development experience.',
@@ -79,6 +113,17 @@ module.exports = [
             [website]: 'https://rsuitejs.com/',
         },
         icon: 'https://rsuitejs.com/favicon.ico',
+    },
+    {
+        name: 'React Tutorial',
+        description:
+            'Learn React in an interactive environment. Understand how React works not just how to build with React.',
+        categories: [programming.learn, programming.codeChallenges],
+        links: {
+            [website]: 'https://react-tutorial.app',
+        },
+        icon: 'https://react-tutorial.app/assets/favicons/favicon-32x32.png',
+        keywords: ['react tutorial', 'interactive react course'],
     },
     {
         name: 'ReactJobsBoard',
@@ -91,14 +136,47 @@ module.exports = [
         icon: 'https://reactjobsboard.com/images/apple-touch-icon.png',
     },
     {
+        name: 'readme.so',
+        categories: [toolsAndUtilities.general],
+        description:
+            "Use readme.so's markdown editor and ready made templates to easily create a simple README for your repositories",
+        links: {
+            [website]: 'https://readme.so/',
+            [github]: 'https://github.com/katherinepeterson/readme.so',
+        },
+        icon: 'https://readme.so/favicon.ico',
+    },
+    {
         name: 'reddit',
-        categories: [readingAndWriting.platforms],
+        categories: [community.blogsAndForums],
         description:
             "Reddit is a network of communities based on people's interests. Find communities you're interested in, and become part of an online community!",
         links: {
             [website]: 'https://www.reddit.com/',
         },
         icon: 'https://www.redditstatic.com/desktop2x/img/favicon/favicon-96x96.png',
+    },
+    {
+        name: 'redditors for hire',
+        categories: [jobs.boards, jobs.freelancing],
+        description: 'Find employers and employees on Reddit.',
+        links: {
+            [website]: 'https://www.reddit.com/r/forhire/',
+        },
+        icon: 'https://www.redditstatic.com/desktop2x/img/favicon/favicon-96x96.png',
+    },
+    {
+        name: 'Rene Rehme',
+        categories: [community.personalWebsites],
+        description: 'A web developer blog by Rene Rehme. This blog is about front- and backend techniques.',
+        links: {
+            [website]: 'https://renerehme.dev/',
+            [twitter]: 'https://twitter.com/ReneReh1',
+            [linkedin]: 'https://de.linkedin.com/in/rene-rehme-44376017a',
+            [github]: 'https://github.com/iseries',
+            [codepen]: 'https://codepen.io/renerehme',
+        },
+        icon: 'https://renerehme.dev/favicon-32x32.png',
     },
     {
         name: 'Refactoring UI',
@@ -120,6 +198,15 @@ module.exports = [
             [website]: 'https://remixicon.com/',
         },
         icon: 'https://remixicon.com/favicon.ico',
+    },
+    {
+        name: 'Remote Impact',
+        categories: [jobs.remoteOnly],
+        description:
+            'Remote dev jobs to save the world. Find a job with social impact in a company tackling the UNs Sustainable Development Goals. We add jobs daily in 17 key impact areas such as climate change, poverty, education + many more',
+        links: {
+            [website]: 'https://www.remoteimpact.io/',
+        },
     },
     {
         name: 'Remote Leaf',
@@ -240,6 +327,15 @@ module.exports = [
         icon: 'https://resumegenius.com/wp-content/uploads/2020/02/resume-genius-favicon-1-150x150.png',
     },
     {
+        name: 'Resume maker',
+        categories: [jobs.resumeBuilders],
+        description: '',
+        links: {
+            [website]: 'https://www.resumemaker.online/',
+        },
+        icon: 'https://www.resumemaker.online/favicon-32x32.png',
+    },
+    {
         name: 'Resume Now',
         categories: [jobs.resumeBuilders],
         description:
@@ -250,6 +346,30 @@ module.exports = [
         icon: 'https://www.resume-now.com/favicon.png',
     },
     {
+        name: 'Retool',
+        categories: [toolsAndUtilities.apiBuilding, toolsAndUtilities.general],
+        description:
+            'Retool is the fast way to build internal tools. Drag-and-drop our building blocks and connect them to your databases and APIs to build your own tools, instantly. Connects with Postgres, REST APIs, GraphQL, Firebase, Google Sheets, and more.  Built by developers, for developers. Trusted by startups and Fortune 500s. Sign up for free.',
+        links: {
+            [website]: 'https://retool.com/',
+            [twitter]: 'https://twitter.com/retool',
+            [linkedin]: 'https://www.linkedin.com/company/tryretool',
+        },
+        icon: 'https://retool.com/favicon.png',
+    },
+    {
+        name: 'Rick Blyth',
+        categories: [community.personalWebsites],
+        description: 'Rick Blyth is a Micro SaaS Founder who shares tips on getting started with Micro SaaS, Passive Income, Quit Your Job and Chrome Extensions. Home of the free 12 chapter Micro SaaS Handbook.',
+        links: {
+            [website]: 'https://rickblyth.com/',
+            [facebook]: 'https://www.facebook.com/rickblythmicrosaas',
+            [twitter]: 'https://twitter.com/rick_blyth',
+            [youtube]: 'https://www.youtube.com/channel/UC_K6le9py40qyCLp_8FdOQQ',
+        },
+        icon: 'https://assets.grooveapps.com/images/5f3e7d217cadae003769b3fd/1646060069_rickblythhalftonestransparent.png',
+    },
+    {
         name: 'Rider',
         categories: [toolsAndUtilities.editorsAndExtensions],
         description: 'Develop .NET, ASP.NET, .NET Core, Xamarin or Unity applications on Windows, Mac, Linux.',
@@ -257,6 +377,36 @@ module.exports = [
             [website]: 'https://www.jetbrains.com/rider/',
         },
         icon: 'https://www.jetbrains.com/favicon-32x32.png',
+    },
+    {
+        name: 'Roadmap SH',
+        categories: [toolsAndUtilities.general],
+        description: 'Step by step guides and paths to learn different tools or technologies',
+        links: {
+            [website]: 'https://roadmap.sh/',
+        },
+        icon: 'https://roadmap.sh/brand.png',
+    },
+    {
+        name: 'Rocket Crew',
+        categories: [jobs.boards],
+        description: 'The biggest list of Space jobs from New space companies.',
+        links: {
+            [website]: 'https://rocketcrew.space/',
+            [twitter]: 'https://twitter.com/RocketCrewSpace',
+            [instagram]: 'https://www.instagram.com/rocketcrewspace/',
+        },
+        icon: 'https://rocketcrew.space/favicon.ico',
+    },
+    {
+        name: 'Rome',
+        categories: [programming.javascript.tooling],
+        description:
+            'Rome is a linter, compiler, bundler, and more for JavaScript, TypeScript, JSON, HTML, Markdown, and CSS.',
+        links: {
+            [website]: 'https://rome.tools/',
+        },
+        icon: 'https://rome.tools/img/pinned-rome-logo.svg',
     },
     {
         name: 'RubyMine',

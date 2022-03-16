@@ -1,5 +1,5 @@
-const { toolsAndUtilities, uiDesign, programming, assets, indieHacking, jobs } = require('../constants/categories')
-const { website, youtube } = require('../constants/links')
+const { toolsAndUtilities, uiDesign, programming, assets, indieHacking, jobs, infrastructure } = require('../constants/categories')
+const { website, youtube, twitter, facebook, github } = require('../constants/links')
 
 module.exports = [
     {
@@ -82,6 +82,28 @@ module.exports = [
         icon: 'https://bergamot.io/favicon.ico',
     },
     {
+        name: 'Berry Free React Material Admin Template',
+        categories: [programming.templates],
+        description:
+            'Berry is a creative free react admin template build using the Material-UI. It is meant to be the best User Experience with highly customizable feature-riched pages. It is a complete game-changer React Dashboard Template with easy and intuitive responsive design as on retina screens or laptops.',
+        links: {
+            [github]: 'https://github.com/codedthemes/berry-free-react-admin-template/',
+        },
+        icon: 'https://github.com/favicon.ico',
+    },
+    {
+        name: 'BetaList',
+        categories: [indieHacking.platforms],
+        description:
+            'BetaList provides an overview of upcoming internet startups. Discover and get early access to the future.',
+        links: {
+            [website]: 'https://betalist.com/',
+            [twitter]: 'https://twitter.com/BetaList',
+        },
+        icon:
+            'https://betalist.com/assets/favicon-618a2bdd0eda7c547f0488b2f97ebc773a50db4351f7ba222f8f1f864e301895.png',
+    },
+    {
         name: 'Better Coding Academy',
         categories: [programming.youtubeChannels],
         description:
@@ -103,6 +125,28 @@ module.exports = [
         icon: 'https://bigheads.io/icons/icon-96x96.png?v=8a6c92a73bc4d9aed0d3fd163a7e3e07',
     },
     {
+        name: 'BigsonDev',
+        categories: [programming.learn],
+        description:
+            'HTML, CSS, JS, React - blog articles, knowledge pills, projects with high-quality designs. Get out of tutorials hell and learn Frontend the right way.',
+        links: {
+            [website]: 'https://bigsondev.com/',
+        },
+        icon: 'https://bigsondev.com/icons/icon-96x96.png',
+        keywords: [
+            'Frontend Mentor',
+            'React Expert',
+            'React',
+            'Frontend Developer',
+            'Frontend projects',
+            'Frontend blog',
+            'Software Engineer',
+            'JavaScript',
+            'HTML',
+            'CSS',
+        ],
+    },
+    {
         name: 'Biteable',
         categories: [assets.videos],
         description:
@@ -111,6 +155,16 @@ module.exports = [
             [website]: 'https://biteable.com/',
         },
         icon: 'https://biteable.com/favicon.ico',
+    },
+    {
+        name: 'Bitfumes',
+        categories: [programming.youtubeChannels],
+        description:
+            'Hey, Friends, I am a web developer and have knowledge of many languages. I made this channel to share my knowledge with you all and want to learn from you also.',
+        links: {
+            [youtube]: 'https://www.youtube.com/bitfumes',
+        },
+        icon: 'https://www.youtube.com/s/desktop/d743f786/img/favicon_96.png',
     },
     {
         name: 'Black Illustrations',
@@ -156,6 +210,16 @@ module.exports = [
         icon: 'https://blush.design/favicon-32x32.png',
     },
     {
+        name: 'Bootify',
+        categories: [programming.codeGenerators],
+        description:
+            'Generate Spring Boot prototypes in your browser - with custom database, REST API and best practices applied.',
+        links: {
+            [website]: 'https://bootify.io/',
+        },
+        icon: 'https://bootify.io/apple-touch-icon.png',
+    },
+    {
         name: 'Bootsnipp',
         categories: [programming.codeSnippets],
         description:
@@ -174,6 +238,17 @@ module.exports = [
             [website]: 'https://getbootstrap.com/',
         },
         icon: 'https://getbootstrap.com/docs/5.0/assets/img/favicons/favicon-32x32.png',
+    },
+    {
+        name: 'Bootstrap 5 Cheatsheet',
+        categories: [programming.docsAndCheatsheets],
+        description:
+            'An interactive list of Bootstrap 5 classes, variables, and mixins. It also helps you easily find the differences between Bootstrap 4 and Bootstrap 5.',
+        keywords: ['Bootstrap', 'Bootstrap cheatsheet', 'Bootstrap 5', 'Free cheatsheet', 'Opensource'],
+        links: {
+            [website]: 'https://bootstrap-cheatsheet.themeselection.com/',
+        },
+        icon: 'https://themeselection.com/wp-content/uploads/2018/07/favicon.ico',
     },
     {
         name: 'BootstrapMade',
@@ -203,6 +278,15 @@ module.exports = [
             [website]: 'https://bootstrapped.fm/',
         },
         icon: 'https://bootstrapped.fm/icon.png',
+    },
+    {
+        name: 'Bootstrapped Web',
+        categories: [indieHacking.podcasts],
+        description: 'The podcast for founders bootstrapping their startups online.',
+        links: {
+            [website]: 'http://bootstrappedweb.com/',
+        },
+        icon: '',
     },
     {
         name: 'BootstrapTaste',
@@ -245,7 +329,7 @@ module.exports = [
         links: {
             [website]: 'https://boxicons.com/',
         },
-        icon: 'https://boxicons.com/static/img/favicon.ico?v=11',
+        icon: 'https://boxicons.com/static/favicon.ico?v=13',
     },
     {
         name: 'Brackets',
@@ -256,6 +340,17 @@ module.exports = [
             [website]: 'http://brackets.io/',
         },
         icon: 'http://brackets.io/favicon.ico',
+    },
+    {
+        name: 'Brainboard',
+        categories: [infrastructure.cloudComputing],
+        description:
+            'Visually Design, Deploy & Manage modern cloud infrastructures starting from any Cloud Provider - AWS, GCP, Azure',
+        keywords: ['cloud', 'cloud designer', 'deploy', 'designer', 'terraform', 'visual designer'],
+        links: {
+            [website]: 'https://www.brainboard.co/',
+        },
+        icon: 'https://app.brainboard.co/favicon.ico',
     },
     {
         name: 'Brave',
@@ -289,6 +384,16 @@ module.exports = [
             'https://3fxtqy18kygf3on3bu39kh93-wpengine.netdna-ssl.com/wp-content/themes/browserstack/img/favicons/apple-touch-icon.png',
     },
     {
+        name: 'Build you SaaS',
+        categories: [indieHacking.podcasts],
+        description:
+            'Can you bootstrap a profitable startup in 2021? Thousands of entrepreneurs, developers, designers, and product people have tried to launch their own web apps. But with so many venture-backed startups now, is it still possible? Follow Jon and Justin as they build their podcasting SaaS, Transistor.fm.',
+        links: {
+            [website]: 'https://saas.transistor.fm/',
+        },
+        icon: 'https://images.transistor.fm/file/transistor/images/favicons/site/6/x64_1541522941-favicon.png',
+    },
+    {
         name: 'Bulma',
         categories: [programming.uiKitsAndLibraries],
         description:
@@ -297,5 +402,16 @@ module.exports = [
             [website]: 'https://bulma.io/',
         },
         icon: 'https://bulma.io/favicons/favicon-32x32.png?v=201701041855',
+    },
+    {
+        name: 'ByPeople',
+        categories: [programming.templates, assets.illustrations, assets.fonts],
+        description: 'ByPeople is a curated network of 10k ready-to-download resources for developers.',
+        links: {
+            [website]: 'https://www.bypeople.com/',
+            [facebook]: 'https://www.facebook.com/ByPeopleTeam',
+            [twitter]: 'https://twitter.com/bypeopleteam',
+        },
+        icon: 'https://www.bypeople.com/wp-content/themes/bppl-alpha/assets/images/v2/favicon-32x32.png',
     },
 ]

@@ -1,7 +1,21 @@
-const { programming, toolsAndUtilities, uiDesign, jobs, assets } = require('../constants/categories')
-const { website } = require('../constants/links')
+const { programming, toolsAndUtilities, uiDesign, jobs, assets, indieHacking } = require('../constants/categories')
+const { website, youtube, applePodcasts, spotify, github, facebook, twitter } = require('../constants/links')
 
 module.exports = [
+    {
+    name: 'Eagle App',
+    description:
+        'Unify your creative inspiration in one place. Store anything – inspiring images, design mockups, illustrations, screenshots and more.',
+    categories: [uiDesign.inspiration],
+    links: {
+        [website]: 'https://en.eagle.cool/',
+        [twitter]: 'https://twitter.com/eagle_app',
+        [facebook]: 'https://www.facebook.com/eagleapp',
+        [youtube]: 'https://www.youtube.com/channel/UCRQc0DPIeQj7U2kvGay3DAg',
+    },
+    icon: 'https://eagle.cool/favicon.ico', 
+    keywords: ['file manager', 'image browser', 'color filter', 'designer tool', 'design file organization'],
+    },
     {
         name: 'EASEOUT',
         categories: [programming.learn],
@@ -99,6 +113,16 @@ module.exports = [
         icon: 'https://edgetipscdn.microsoft.com/insider-site/images/favicon.fbd89822.png',
     },
     {
+        name: 'Eggradients',
+        categories: [uiDesign.color],
+        description:
+            'Ready to use gradient background colors. Cool Gradients are prepared according to the latest design trends. And it is served in the form of eggs. With hex and CSS codes.',
+        links: {
+            [website]: 'https://www.eggradients.com/',
+        },
+        icon: 'https://uploads-ssl.webflow.com/5a9423a3f702750001758d4f/5a96bc44892ae8000194cc9c_fav.png',
+    },
+    {
         name: 'Eleventy High Performance Blog',
         categories: [programming.templates],
         description:
@@ -175,6 +199,29 @@ module.exports = [
         icon: 'https://error404.fun/img/favicon-32x32.png',
     },
     {
+        name: 'Escrow',
+        categories: [toolsAndUtilities.domains],
+        description:
+            'Secure online payment processing from the world’s largest online escrow service since 1999. Trusted by 1M+ users. Priced as low as 0.89%. For transactions $100 to $10M+.',
+        links: {
+            [website]: 'https://www.escrow.com/',
+        },
+        icon: 'https://www.escrow.com/build/images/favicons/favicon-32x32.png',
+    },
+    {
+        name: 'Everyone Hates Marketers',
+        categories: [indieHacking.marketing],
+        description:
+            "It's the antidote to marketing bullshit. Receive a free, 8-lesson video course + a super practical, no-bullshit essay in your inbox every Tuesday.",
+        links: {
+            [website]: 'https://www.everyonehatesmarketers.com/',
+            [youtube]: 'https://www.youtube.com/channel/UCOeHlb7boJXbQLExb7_ia3w',
+            [applePodcasts]: 'https://podcasts.apple.com/us/podcast/everyone-hates-marketers/id1221256195',
+            [spotify]: 'https://open.spotify.com/show/7iEF1qovZZiaP1iRtxGARo?si=ZrxDGNEnRzegia-NOgLn-Q',
+        },
+        icon: 'https://uploads-ssl.webflow.com/5f5b3208b507493089d50445/5fa0382a02da241b9adae56e_favicon-32x32.png',
+    },
+    {
         name: 'Exercism',
         categories: [programming.codeChallenges],
         description:
@@ -184,5 +231,15 @@ module.exports = [
         },
         icon:
             'https://assets.exercism.io/assets/favicon/apple-touch-icon-72x72-4ebeea76fc0ae80d3bb77a59752c5caf5d7debce078764ef95d6b69caa5e9c0b.png',
+    },
+    {
+        name: 'explainshell',
+        categories: [toolsAndUtilities.commandLine],
+        description: 'Match command-line arguments to their help text.',
+        links: {
+            [website]: 'https://explainshell.com/',
+            [github]: 'https://github.com/idank/explainshell',
+        },
+        icon: 'https://explainshell.com/favicon.ico',
     },
 ]

@@ -4,10 +4,11 @@ const {
     infrastructure,
     jobs,
     assets,
-    readingAndWriting,
     uiDesign,
+    indieHacking,
+    community,
 } = require('../constants/categories')
-const { website, youtube } = require('../constants/links')
+const { website, youtube, github, twitter } = require('../constants/links')
 
 module.exports = [
     {
@@ -20,6 +21,17 @@ module.exports = [
             [website]: 'https://www.gatsbyjs.com/',
         },
         icon: 'https://www.gatsbyjs.com/icons/icon-96x96.png?v=3ad5294f3fa6c06e2d07ab07c76df2cf',
+    },
+    {
+        name: 'Get The Audience',
+        categories: [indieHacking.utilities],
+        description:
+            'Get The Audience helps you grow your Twitter audience by analyzing what they care about, who they are, and when they can be reached.',
+        links: {
+            [website]: 'https://gettheaudience.com/',
+            [twitter]: 'https://twitter.com/GetTheAudience',
+        },
+        icon: 'https://gettheaudience.com/images/icons/icon-96x96.png',
     },
     {
         name: 'GetTerms.io',
@@ -39,6 +51,16 @@ module.exports = [
             [website]: 'https://pages.github.com/',
         },
         icon: 'https://pages.github.com/favicon.ico',
+    },
+    {
+        name: 'Git Cheat Sheets',
+        categories: [community.hacktoberfest, programming.docsAndCheatsheets],
+        description:
+            'Reference sheets covering Git commands, features, SVN migrations, and bash. Available in multiple languages.',
+        links: {
+            [website]: 'https://training.github.com/',
+        },
+        icon: '',
     },
     {
         name: 'GoatCounter',
@@ -123,7 +145,7 @@ module.exports = [
     },
     {
         name: 'Google Technical Writing',
-        categories: [readingAndWriting.learn],
+        categories: [toolsAndUtilities.writing],
         description:
             'This collection of courses and learning resources aims to improve your technical documentation. Learn how to plan and author technical documents. You can also learn about the role of technical writers at Google.',
         links: {
@@ -151,7 +173,7 @@ module.exports = [
     },
     {
         name: 'Gradient',
-        categories: [uiDesign.colorPalettes],
+        categories: [uiDesign.color],
         description:
             'Thousands of trendy color gradients in a curated collection that is updated daily. Get a fresh color gradient for your next design project and save all the gradients you like.',
         links: {
@@ -160,8 +182,18 @@ module.exports = [
         icon: 'https://gradienthunt.com/img/gradienthunt.jpg',
     },
     {
+        name: 'Gradientos',
+        categories: [uiDesign.color],
+        description: 'Find and test gradients easily.',
+        keywords: ['color', 'UI', 'design', 'gradient'],
+        links: {
+            [website]: 'https://gradientos.app',
+        },
+        icon: 'https://gradientos.app/favicon.ico',
+    },
+    {
         name: 'Gramara',
-        categories: [readingAndWriting.utilities],
+        categories: [toolsAndUtilities.writing],
         description: 'Write fluent English in a snap!',
         links: {
             [website]: 'https://gramara.com/',
@@ -170,7 +202,7 @@ module.exports = [
     },
     {
         name: 'Grammarly',
-        categories: [readingAndWriting.utilities],
+        categories: [toolsAndUtilities.writing],
         description:
             'Grammarly makes sure everything you type is easy to read, effective, and mistake-free. Try it today:.',
         links: {
@@ -198,6 +230,16 @@ module.exports = [
         icon: 'http://grid.guide/assets/favicons/favicon-96x96.png',
     },
     {
+        name: 'Grid Garden',
+        categories: [programming.learn],
+        description: 'A game for learning CSS grid layout.',
+        links: {
+            [website]: 'https://cssgridgarden.com/',
+            [github]: 'https://github.com/thomaspark/gridgarden/',
+        },
+        icon: 'http://cssgridgarden.com/favicon.ico',
+    },
+    {
         name: 'Grommet',
         categories: [programming.uiKitsAndLibraries],
         description: 'Grommet documentation.',
@@ -206,6 +248,17 @@ module.exports = [
             [website]: 'https://v2.grommet.io/',
         },
         icon: 'https://v2.grommet.io/img/mobile-app-icon.png',
+    },
+    {
+        name: 'Growth List',
+        categories: [indieHacking.marketing],
+        description:
+            'GrowthList is the go-to resource hub for tech-savvy marketers in fast-growing companies. Find hundred of Growth Hacks to boost your startup !',
+        links: {
+            [website]: 'https://www.thegrowthlist.co/',
+        },
+        icon:
+            'https://uploads-ssl.webflow.com/5e5918651c2c93508dd3bab8/5fae8f6c16320938da6c33f8_Webp.net-resizeimage%20(9).png',
     },
     {
         name: 'GTmetrix',

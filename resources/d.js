@@ -1,5 +1,14 @@
-const { programming, assets, readingAndWriting, jobs, uiDesign, toolsAndUtilities } = require('../constants/categories')
-const { website, youtube } = require('../constants/links')
+const {
+    programming,
+    assets,
+    jobs,
+    uiDesign,
+    toolsAndUtilities,
+    indieHacking,
+    infrastructure,
+    community,
+} = require('../constants/categories')
+const { website, youtube, twitter, discord } = require('../constants/links')
 
 module.exports = [
     {
@@ -37,7 +46,7 @@ module.exports = [
     },
     {
         name: 'daily.dev',
-        categories: [readingAndWriting.utilities],
+        categories: [community.blogsAndForums],
         description:
             'Daily.dev is the easiest way to stay updated on the latest programming news. Get the hottest dev news from the best tech blogs on any topic you can think of. Stay updated daily, and unlock more time to do fun stuff, relax, or just code.',
         links: {
@@ -57,6 +66,16 @@ module.exports = [
         icon: 'https://dailyremote.com/assets/favicon/favicon-96.png',
     },
     {
+        name: 'daisyUI',
+        description: 'Tailwind CSS Components plugin — daisyUI tailwind component library',
+        categories: [programming.uiKitsAndLibraries],
+        links: {
+            [website]: 'https://daisyui.com',
+        },
+        icon: 'https://daisyui.com/favicon.ico',
+        keywords: ['daisy', 'ui', 'daisyui', 'library'],
+    },
+    {
         name: 'Dart Cheatsheet Codelab',
         categories: [programming.docsAndCheatsheets],
         description: "Interactively learn (or relearn) some of Dart's unique features.",
@@ -68,7 +87,7 @@ module.exports = [
     },
     {
         name: 'Data Viz Color Picker',
-        categories: [uiDesign.colorPalettes],
+        categories: [uiDesign.color],
         description: 'A color palette generator for data visualizations.',
         links: {
             [website]: 'https://learnui.design/tools/data-color-picker.html',
@@ -83,6 +102,26 @@ module.exports = [
             [website]: 'https://www.jetbrains.com/datagrip/',
         },
         icon: 'https://www.jetbrains.com/favicon-32x32.png',
+    },
+    {
+        name: 'Decoded Frontend',
+        description: 'Decoded Frontend is a source of advanced & pragmatic video tutorials about Angular, GraphQL and Web Development in particular. My name is Dmytro Mezhenskyi. I am an author of this channel and I have been a Frontend Developer since 2012. It means 9 Years... whoa... and I still enjoy it 😄 During my carrier I have worked with various projects which had different scale and complexity and now I realised that it is a time to share my knowledge with another developers around the globe. My channel has already helped developers to find answers on sophisticated Angular topics and I am sure you will be able to find something interesting for you as well. Subscribe to my channel, leave your feedbacks and become a better Developer 😉',
+        categories: [programming.youtubeChannels],
+        links: {
+            [website]: 'https://www.youtube.com/c/DecodedFrontend/featured',
+        },
+        icon: 'https://www.youtube.com/s/desktop/b349a03a/img/favicon_96x96.png',
+        keywords: ['Angular', 'GraphQL', 'Web Development', 'tutorials']
+    },
+    {
+        name: 'Default Alive',
+        categories: [indieHacking.podcasts],
+        description:
+            'Two founders share an unedited look at what it\'s like to bootstrap a startup through weekly updates. Chris Spags is the founder of Jetboost, a suite of no-code plugins for Webflow. Corey Haines is the founder of Swipe Files, a membership site for marketers built with no-code tools. They chronicle their journeys getting to and staying "default alive": profitable, self-sustaining, with infinite runway. – Listen to Default Alive instantly on your tablet, phone or browser - no downloads needed.',
+        links: {
+            [website]: 'https://podtail.com/en/podcast/default-alive/',
+        },
+        icon: 'https://podtail.com/favicon.ico',
     },
     {
         name: 'Delesign',
@@ -108,8 +147,26 @@ module.exports = [
         icon: 'https://www.youtube.com/s/desktop/d743f786/img/favicon_96.png',
     },
     {
+        name: 'DesignJoy',
+        categories: [uiDesign.utilities],
+        description: 'The #1 unlimited product design subscription service for agencies, startups, and entrepreneurs.',
+        links: {
+            [website]: 'https://www.designjoy.co/',
+        },
+        icon: 'https://uploads-ssl.webflow.com/5837424ae11409586f837994/5e2fb217d4837e75854462c9_Small.png',
+    },
+    {
+        name: 'Design Modo',
+        categories: [jobs.boards],
+        description: 'Remote and full time jobs for web designers and developers.',
+        links: {
+            [website]: 'https://designmodo.com/jobs/',
+        },
+        icon: 'https://designmodo.com/wp-content/themes/designmodo/assets/favicon/apple-touch-icon-114x114.png',
+    },
+    {
         name: 'DEV',
-        categories: [readingAndWriting.platforms],
+        categories: [community.blogsAndForums],
         description:
             'A constructive and inclusive social network for software developers. With you every step of your journey.',
         keywords: ['software development', 'engineering', 'rails', 'javascript', 'ruby'],
@@ -118,6 +175,15 @@ module.exports = [
         },
         icon:
             'https://res.cloudinary.com/practicaldev/image/fetch/s--t7tVouP9--/c_limit,f_png,fl_progressive,q_80,w_192/https://practicaldev-herokuapp-com.freetls.fastly.net/assets/devlogo-pwa-512.png',
+    },
+    {
+        name: 'Design Resources',
+        categories: [uiDesign.utilities],
+        description: 'A curated list of the best design resources handpicked from around the web.',
+        links: {
+            [website]: 'https://www.designresourc.es/',
+        },
+        icon: 'https://uploads-ssl.webflow.com/5e8b094d33bd3056d4901e70/5e946e20071f2f592ba85f7e_dr.png',
     },
     {
         name: 'Dev Ed',
@@ -129,6 +195,27 @@ module.exports = [
             [youtube]: 'https://www.youtube.com/c/DevEd/',
         },
         icon: 'https://www.youtube.com/s/desktop/d743f786/img/favicon_96.png',
+    },
+    {
+        name: 'Developer tea',
+        categories: [programming.podcasts],
+        description: 'A podcast for developers designed to fit inside your tea break',
+        links: {
+            [website]: 'https://spec.fm/podcasts/developer-tea',
+        },
+        icon: 'https://spec.fm/static/meta/android-chrome-192x192.png',
+    },
+    {
+        name: 'devChallenges',
+        categories: [programming.learn, programming.codeChallenges],
+        description:
+            'devChallenges.io is a community and a platform for anyone who wants to become a Software Engineer by building real-life projects and solving practical tasks. devChallenges.io is built with the goal of enabling you to build an outstanding portfolio.',
+        links: {
+            [website]: 'https://devchallenges.io/',
+            [twitter]: 'https://twitter.com/devchallengesio',
+            [discord]: 'https://discord.com/invite/3R6vFeM',
+        },
+        icon: 'https://devchallenges.io/favicon-32x32.png',
     },
     {
         name: 'DevDocs',
@@ -183,6 +270,39 @@ module.exports = [
         icon: 'https://www.youtube.com/s/desktop/d743f786/img/favicon_96.png',
     },
     {
+        name: 'Dev Weekly',
+        categories: [programming.newsletters],
+        description:
+            'A no nonsense newsletter delivered every Sunday with more than 50 resources ranging from mobile to web, UI/UX, Python, database, career, life, challenges and more without any ads or sponsors. It also features one creator per week!',
+        keywords: [
+            'web',
+            'html',
+            'css',
+            'javascript',
+            'code',
+            'python',
+            'data',
+            'ai',
+            'mobile',
+            'apps',
+            'flutter',
+            'android',
+            'ios',
+            'design',
+            'work',
+            'culture',
+            'job',
+            'challenges',
+            'tools',
+            'software',
+            'creators',
+            'tips',
+            'resources',
+        ],
+        links: { [website]: 'https://mailchi.mp/f59beeac6b9b/devupdates' },
+        icon: 'https://mailchimp.com/release/plums/cxp/images/apple-touch-icon-192.ce8f3e6d.png',
+    },
+    {
         name: 'Divjoy',
         categories: [programming.templates],
         description:
@@ -191,6 +311,25 @@ module.exports = [
             [website]: 'https://divjoy.com/',
         },
         icon: 'https://divjoy.com/static/images/favicon/favicon-32x32.png',
+    },
+    {
+        name: 'DOM Events',
+        categories: [programming.learn],
+        description: 'Learn how the DOM Event system works through exploration.',
+        links: {
+            [website]: 'https://domevents.dev/',
+        },
+        icon: 'https://domevents.dev/apple-touch-icon.454d8b40.png',
+    },
+    {
+        name: 'domain.garden',
+        categories: [toolsAndUtilities.domains],
+        description:
+            'Instantly search across 1000+ new domain name extensions. Generate clever names, compare registry prices, and list popular examples per TLD.',
+        links: {
+            [website]: 'https://domain.garden/',
+        },
+        icon: 'https://domain.garden/favicon.ico',
     },
     {
         name: 'Dracula theme',
@@ -235,6 +374,16 @@ module.exports = [
             'https://cdn.dribbble.com/assets/dribbble-ball-192-23ecbdf987832231e87c642bb25de821af1ba6734a626c8c259a20a0ca51a247.png',
     },
     {
+        name: 'Drupal',
+        description: 'Drupal is an open source platform for building amazing digital experiences. It is made by a dedicated community. Anyone can use it, and it will always be free.',
+        categories: [toolsAndUtilities.websiteBuilders],
+        links: {
+            [website]: 'https://www.drupal.org/',
+        },
+        icon: 'https://www.drupal.org/favicon.ico',
+        keywords: ['website builder', 'content management system', 'CMS', 'open source'],
+    },
+    {
         name: 'dygraphs',
         categories: [programming.charts],
         description:
@@ -243,5 +392,15 @@ module.exports = [
             [website]: 'https://dygraphs.com/',
         },
         icon: 'https://dygraphs.com/favicon.ico',
+    },
+    {
+        name: 'DynamoDB',
+        categories: [infrastructure.databases],
+        description:
+            'Amazon DynamoDB is a nonrelational database. This database system provides consistent latency and offers built-in security and in-memory caching. DynamoDB is a serverless database which scales automatically and backs up your data for protection.',
+        links: {
+            [website]: 'https://aws.amazon.com/dynamodb/',
+        },
+        icon: 'https://a0.awsstatic.com/libra-css/images/site/fav/favicon.ico',
     },
 ]

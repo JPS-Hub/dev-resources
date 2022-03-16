@@ -1,7 +1,29 @@
 const { assets, toolsAndUtilities, jobs, indieHacking, programming } = require('../constants/categories')
-const { website } = require('../constants/links')
+const {
+    website,
+    spotify,
+    applePodcasts,
+    googlePodcasts,
+    youtube,
+    facebook,
+    slack,
+    indieHackers,
+    twitter,
+} = require('../constants/links')
 
 module.exports = [
+    {
+        name: 'Icon Horse',
+        categories: [assets.icons],
+        description:
+            'Free, easy to use, highest resolution possible favicons for any web site – including fallbacks if none are found.',
+        keywords: ['favicons', 'logo icons', 'web icons', 'logos', 'site logos'],
+        links: {
+            [website]: 'https://icon.horse',
+            [twitter]: 'https://twitter.com/iconhorse',
+        },
+        icon: 'https://icon.horse/icon/icon.horse',
+    },
     {
         name: 'iconmonstr',
         categories: [assets.icons],
@@ -19,7 +41,7 @@ module.exports = [
         links: {
             [website]: 'https://icons8.com',
         },
-        icon: 'https://icons8.com/vue-static/icon/favicon/favicon_16.png',
+        icon: 'https://logos-download.com/wp-content/uploads/2020/06/Icons8_Logo.png',
     },
     {
         name: 'Iconscout',
@@ -110,6 +132,19 @@ module.exports = [
         icon: 'https://www.indeed.com/profile/gatsby-assets/icons/icon-96x96.png?v=d69338e3b43810840b9a84d69dbaa30e',
     },
     {
+        name: 'Indie Bits',
+        categories: [indieHacking.podcasts],
+        description:
+            "Short, bite-sized conversations (15 mins) with indie hackers that have started small, profitable and bootstrapped businesses. You'll learn how they come up with ideas, what they do to validate, find those first customers and make a sustainable income.",
+        links: {
+            [website]: 'https://indiebites.co/',
+            [spotify]: 'https://open.spotify.com/show/1MY9XdVViRwfaO8giM4fXO',
+            [applePodcasts]: 'https://podcasts.apple.com/gb/podcast/indie-bites/id1530577069',
+            [googlePodcasts]: 'https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy50cmFuc2lzdG9yLmZtL2luZGllLWJpdGVz',
+        },
+        icon: 'https://s3.amazonaws.com/super-notion/images/26707ca1-dc44-44e8-90ce-9e6220840f71.png',
+    },
+    {
         name: 'Indie Drops',
         categories: [indieHacking.utilities],
         description: 'Secure unbelivably good deals on early-stage products before they take off.',
@@ -129,18 +164,22 @@ module.exports = [
         icon: 'https://www.indiehackers.com/images/favicons/favicon--32x32.png',
     },
     {
-        name: 'Inovatik',
-        categories: [programming.templates],
-        description:
-            'HTML templates designed to power up your online projects with responsive layout, included reusable images and simple licensing.',
+        name: 'Indie Worldwide',
+        categories: [indieHacking.platforms],
+        description: 'The worldwide virtual meetup of indie hackers, founders, and makers.',
         links: {
-            [website]: 'https://inovatik.com/',
+            [website]: 'https://indieworldwide.co/',
+            [youtube]: 'https://www.youtube.com/channel/UCMps9pFrqetqXMCEZqkiQ-g/',
+            [facebook]: 'https://www.facebook.com/groups/indie.worldwide/',
+            [slack]:
+                'https://join.slack.com/t/indieworldwide/shared_invite/enQtNzYzNTUwMjc2ODgyLTBjNTRiMmMwYWQ2MmQ5OGYyNTk2OWIwN2Q1OTcyOGJjM2M3MzEwYjc5OThjNTlmMWZhNTU0NDAyYjRkNDQ0Zjk',
+            [indieHackers]: 'https://www.indiehackers.com/product/worldwide',
         },
-        icon: 'https://inovatik.com/images/favicon.png',
+        icon: 'https://indieworldwide.co/icons/icon-96x96.png',
     },
     {
         name: 'Insomnia',
-        categories: [programming.apiBuilding],
+        categories: [toolsAndUtilities.apiBuilding],
         description: 'Design & Debug APIs like a human, not a robot.',
         links: {
             [website]: 'https://insomnia.rest/',
@@ -186,6 +225,27 @@ module.exports = [
             [website]: 'https://interfacer.xyz/',
         },
         icon: 'https://interfacer.xyz/assets/site_assets/interfacelogo-icon.png',
+    },
+    {
+        name: 'IntersectionObserver Examples',
+        description: 'Practical, real world React examples of Intersection Observer',
+        categories: [
+            programming.codeSnippets,
+            programming.docsAndCheatsheets,
+            programming.javascript.react,
+            programming.learn,
+        ],
+        keywords: [
+            'IntersectionObserver',
+            'IntersectionObserver API',
+            'IntersectionObserver examples',
+            'React',
+            'React IntersectionObserver',
+        ],
+        links: {
+            [website]: 'https://intersectionobserver.io',
+        },
+        icon: 'https://intersectionobserver.io/favicon.png',
     },
     {
         name: 'iOS Dev Jobs',

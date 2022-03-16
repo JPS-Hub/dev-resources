@@ -1,8 +1,6 @@
 const axios = require('axios')
-const categories = require('../../constants/categories')
 const links = require('../../constants/links')
 
-const { toolsAndUtilities } = categories
 const { website } = links
 
 module.exports = async function () {
@@ -11,8 +9,8 @@ module.exports = async function () {
 
         const parsedResult = publicApis.data.entries.map((api) => {
             const parsedApi = {
-                categories: [toolsAndUtilities.publicApis],
                 links: {},
+                public_api_fields: {},
             }
 
             Object.entries(api).forEach(([key, value]) => {
@@ -20,14 +18,17 @@ module.exports = async function () {
                     case 'API':
                         parsedApi.name = value
                         break
+                    case 'Description':
+                        parsedApi.description = value
+                        break
                     case 'Link':
                         parsedApi.links[website] = value
                         break
                     case 'Category':
-                        parsedApi.apiCategory = value
+                        parsedApi.categories = ['Public APIs/All', `Public APIs/${value}`]
                         break
                     default:
-                        parsedApi[key.toLowerCase()] = value
+                        parsedApi.public_api_fields[key.toLowerCase()] = value
                         break
                 }
             })

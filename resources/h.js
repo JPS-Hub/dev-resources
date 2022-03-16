@@ -1,13 +1,14 @@
 const {
     uiDesign,
-    readingAndWriting,
+    community,
     programming,
     assets,
     infrastructure,
     jobs,
     toolsAndUtilities,
+    indieHacking,
 } = require('../constants/categories')
-const { website } = require('../constants/links')
+const { website, twitter } = require('../constants/links')
 
 module.exports = [
     {
@@ -22,7 +23,7 @@ module.exports = [
     },
     {
         name: 'Hacker News',
-        categories: [readingAndWriting.platforms],
+        categories: [community.blogsAndForums],
         description: 'Hacker News is a social news website focusing on computer science and entrepreneurship.',
         links: {
             [website]: 'https://news.ycombinator.com/',
@@ -31,7 +32,7 @@ module.exports = [
     },
     {
         name: 'Hacker Noon',
-        categories: [readingAndWriting.platforms],
+        categories: [community.blogsAndForums],
         description: 'How hackers start their afternoons.',
         keywords: ['blockchain', 'bitcoin', 'tech', 'crypto', 'software-development', 'react', 'vue'],
         links: {
@@ -60,8 +61,37 @@ module.exports = [
         icon: 'https://hackr.io/assets/images/programming-images/programming-favicon-32x32.png',
     },
     {
+        name: 'Hacktoberfest',
+        categories: [community.hacktoberfest],
+        description:
+            'Hacktoberfest is a month-long celebration of open source software run by DigitalOcean. During the month of October, we invite you to join open-source software enthusiasts, beginners, and the developer community by contributing to open-source projects.',
+        links: {
+            [website]: 'https://hacktoberfest.digitalocean.com/',
+        },
+        icon: 'https://hacktoberfest.digitalocean.com/favicon.ico',
+    },
+    {
+        name: 'Hacktoberfest Finder',
+        categories: [community.hacktoberfest],
+        description: 'Hacktoberfest Finder helps you find issues that you could help fix.',
+        links: {
+            [website]: 'https://hacktoberfest-finder.netlify.app/',
+        },
+        icon: 'https://hacktoberfest-finder.netlify.app/img/favicons/apple-touch-icon.png',
+    },
+    {
+        name: 'Hacktoberfest Swag List',
+        categories: [community.hacktoberfest],
+        description:
+            'There are many companies giving out free swag for Hacktoberfest and this list seeks to find them all!',
+        links: {
+            [website]: 'https://hacktoberfestswaglist.com/',
+        },
+        icon: 'https://hacktoberfestswaglist.com/favicon.ico',
+    },
+    {
         name: 'Happy Hues',
-        categories: [uiDesign.colorPalettes],
+        categories: [uiDesign.color],
         description:
             'See color palette inspiration on a real example website. As you click on different palettes every color on this site updates to give you context of how that color could be used for your design or illustration projects.',
         links: {
@@ -72,7 +102,7 @@ module.exports = [
     },
     {
         name: 'Hashnode',
-        categories: [readingAndWriting.platforms],
+        categories: [community.blogsAndForums],
         description:
             'Hashnode is a free content creation platform and community that allows you to publish articles on your own domain and helps you stay connected with a growing developer community.',
         links: {
@@ -90,7 +120,7 @@ module.exports = [
     },
     {
         name: 'Hemingway App',
-        categories: [readingAndWriting.utilities],
+        categories: [toolsAndUtilities.writing],
         description:
             'Hemingway App makes your writing bold and clear. The app highlights lengthy, complex sentences and common errors.',
         links: {
@@ -127,6 +157,15 @@ module.exports = [
         icon: 'https://www.herokucdn.com/favicon.ico',
     },
     {
+        name: 'Hey Meta',
+        categories: [toolsAndUtilities.seo],
+        description: 'Check and improve how search engines and social media websites see and display your website.',
+        links: {
+            [website]: 'https://www.heymeta.com/',
+        },
+        icon: 'https://www.heymeta.com/favicon-32x32.png',
+    },
+    {
         name: 'High Compress',
         categories: [assets.images],
         description:
@@ -158,6 +197,18 @@ module.exports = [
         icon: 'https://www.highcharts.com/images/ico/favicon-96x96.png',
     },
     {
+        name: 'Himalayas',
+        categories: [jobs.boards],
+        description:
+            'Experience the remote ecosystem - find a remote job you love, research the fastest-growing remote companies, and hire experienced remote workers.',
+        keywords: ['himalayas', 'remote', 'jobs', 'developer', 'sales'],
+        links: {
+            [website]: 'https://himalayas.app',
+        },
+        icon:
+            'https://ik.imagekit.io/himalayas/himalayas-icon_J2SoMLtNA9W?ik-sdk-version=javascript-1.4.3&updatedAt=1644362275336',
+    },
+    {
         name: 'hire.AR',
         categories: [jobs.boards],
         description:
@@ -178,6 +229,16 @@ module.exports = [
         icon: 'https://hired.com/assets/favicon-f8bba6617971bf8553966d715a950b9b12988ec72984a3c3453c404cda6f2377.ico',
     },
     {
+        name: 'Hive Index',
+        categories: [indieHacking.utilities],
+        description: 'Find online communities, across all platforms, for any topic.',
+        links: {
+            [website]: 'https://thehiveindex.com/',
+            [twitter]: 'https://twitter.com/thehiveindex',
+        },
+        icon: 'https://thehiveindex.com/icons/icon-96x96.png',
+    },
+    {
         name: 'Hloom',
         categories: [jobs.resumeBuilders],
         description:
@@ -189,7 +250,7 @@ module.exports = [
     },
     {
         name: 'Hoppscotch',
-        categories: [programming.apiBuilding],
+        categories: [toolsAndUtilities.apiBuilding],
         description: 'Helps you create requests faster, saving precious time on development.',
         keywords: [
             'hoppscotch',
@@ -233,6 +294,25 @@ module.exports = [
             [website]: 'https://hostman.com/',
         },
         icon: 'https://hostman.com/favicon.ico',
+    },
+    {
+        name: 'HTMLrev',
+        categories: [programming.templates],
+        description:
+            'HTML templates specially designed for static websites to save development time and elevate project design.',
+        links: {
+            [website]: 'https://htmlrev.com/',
+        },
+        keywords: ['HTML', 'templates', 'business', 'portfolio'],
+    },
+    {
+        name: 'HTML Reference',
+        categories: [programming.docsAndCheatsheets],
+        description: 'A free guide to all HTML elements and attributes.',
+        links: {
+            [website]: 'https://htmlreference.io/',
+        },
+        icon: 'https://htmlreference.io/favicons/favicon-32x32.png',
     },
     {
         name: 'HTML5 Accessibility',

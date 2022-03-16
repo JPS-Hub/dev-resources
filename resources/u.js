@@ -1,5 +1,13 @@
-const { toolsAndUtilities, assets, programming, uiDesign, infrastructure, jobs } = require('../constants/categories')
-const { website } = require('../constants/links')
+const {
+    toolsAndUtilities,
+    assets,
+    programming,
+    uiDesign,
+    infrastructure,
+    jobs,
+    community,
+} = require('../constants/categories')
+const { website, twitter, facebook, instagram, linkedin, github } = require('../constants/links')
 
 module.exports = [
     {
@@ -43,6 +51,15 @@ module.exports = [
         icon: 'https://uidesigndaily.com/public/img/favicon-32x32.png',
     },
     {
+        name: 'UI Design for Developers',
+        categories: [uiDesign.learn],
+        description: 'Learn just enough visual design to be dangerous as a developer.',
+        links: {
+            [website]: 'https://designcode.io/ui-design-for-developers',
+        },
+        icon: 'https://designcode.io/icons/icon-96x96.png',
+    },
+    {
         name: 'UI Garage',
         categories: [uiDesign.inspiration],
         description:
@@ -51,6 +68,20 @@ module.exports = [
             [website]: 'https://uigarage.net/',
         },
         icon: 'https://assets.uigarage.net/content/uploads/2019/05/favicon-50x50.png',
+    },
+    {
+        name: 'UI HUT',
+        categories: [uiDesign.inspiration, assets.icons, assets.illustrations],
+        description:
+            'Download thousands of templates, illustrations, icons, and ui design kits for web and mobile app design without paying designer prices.',
+        links: {
+            [website]: 'https://www.uihut.com/',
+            [twitter]: 'https://twitter.com/uihutofficial',
+            [facebook]: 'https://www.facebook.com/uihutofficial',
+            [instagram]: 'https://www.instagram.com/uihutofficial/',
+            [linkedin]: 'https://www.linkedin.com/company/uihutofficial',
+        },
+        icon: 'https://www.uihut.com/favicon.jpg',
     },
     {
         name: 'UI Movement',
@@ -92,6 +123,16 @@ module.exports = [
         icon: 'https://uideck.com/wp-content/uploads/2018/12/cropped-uideck-150x150.png',
     },
     {
+        name: 'uiGradient',
+        categories: [uiDesign.color],
+        description: 'Library of dozens of Gradients ready to use with CSS class and also HEX color.',
+        links: {
+            [website]: 'https://uigradients.com/',
+            [github]: 'https://github.com/Ghosh/uiGradients',
+        },
+        icon: 'https://uigradients.com/static/images/favicon-32x32.png',
+    },
+    {
         name: 'UIkit',
         categories: [programming.uiKitsAndLibraries],
         description:
@@ -105,7 +146,7 @@ module.exports = [
         name: 'Umbler',
         categories: [infrastructure.hosting],
         description:
-            'Somos a hospedagem de sites e aplicações que você pode confiar. Perfeito para as necessidades atuais das agências, desenvolvedores e empreendedores.',
+            'We are the website and applications hosting that you can trust. Perfect for the current needs of agencies, developers and entrepreneurs.',
         links: {
             [website]: 'https://www.umbler.com/',
         },
@@ -161,8 +202,18 @@ module.exports = [
         icon: 'https://untools.co/icons/icon-96x96.png?v=48b6eb2cd872327651861e831bd90577',
     },
     {
+        name: 'Upto.Site',
+        categories: [toolsAndUtilities.general],
+        description: 'Upto.Site is the ultimate url shortener which can be used to create instant FREE short urls.',
+        keywords: ['url shortener', 'link', 'link shortener', 'link shortener api'],
+        links: {
+            [website]: 'https://upto.site',
+        },
+        icon: 'https://upto.site/favicon.png',
+    },
+    {
         name: 'UpLabs',
-        categories: [assets.illustrations, assets.icons],
+        categories: [assets.illustrations, assets.icons, uiDesign.inspiration],
         description: 'UpLabs curates the best of design & development inspiration, resources and freebies. Every day!',
         links: {
             [website]: 'https://www.uplabs.com/',
@@ -180,6 +231,34 @@ module.exports = [
         icon: 'https://www.upwork.com/ab/brontes/favicon.ico',
     },
     {
+        name: 'Up For Grabs',
+        categories: [community.hacktoberfest],
+        description:
+            'This is a list of projects which have curated tasks specifically for new contributors. These are a great way to get started with a project, or to help share the load of working on open source projects.',
+        links: {
+            [website]: 'https://up-for-grabs.net/#/',
+        },
+        icon: 'https://up-for-grabs.net/icons/favicon-196x196.png',
+    },
+    {
+        name: 'Use The Keyboard',
+        categories: [toolsAndUtilities.general],
+        description: 'A collection of keyboard shortcuts for Mac apps, Windows programs, and a variety of websites.',
+        links: {
+            [website]: 'https://usethekeyboard.com/',
+        },
+        icon: 'https://usethekeyboard.com/assets/img/favicon-32x32.png',
+    },
+    {
+        name: 'Useful Colours',
+        categories: [uiDesign.color],
+        description: 'Super quick, eye-pleasing colours for your UI design.',
+        links: {
+            [website]: 'https://usefulcolours.com/',
+        },
+        icon: 'https://usefulcolours.com/favicon.png',
+    },
+    {
         name: 'useHooks',
         categories: [programming.javascript.react],
         description: 'Easy to understand React Hook recipes.',
@@ -188,5 +267,18 @@ module.exports = [
             [website]: 'https://usehooks.com/',
         },
         icon: 'https://usehooks.com/favicon.ico',
+    },
+    {
+        name: 'UXfolio',
+        categories: [toolsAndUtilities.general],
+        description:
+            'UXfolio is a powerful UX portfolio builder with no coding required. Pick a stunning template and tell the story behind your design process.',
+        links: {
+            [website]: 'https://uxfol.io/',
+            [facebook]: 'https://www.facebook.com/UXfolio/',
+            [twitter]: 'https://twitter.com/UXfolio',
+            [linkedin]: 'https://www.linkedin.com/company/uxfolio/',
+        },
+        icon: 'https://uxfol.io/favicon/favicon-16x16.png',
     },
 ]

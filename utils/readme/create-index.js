@@ -1,28 +1,20 @@
-const validateExternalResources = require('../validate-external-resource')
-
-const { isPublicApis } = validateExternalResources
-
-function createIndentation(depth) {
-    return '  '.repeat(depth) || ''
-}
-
 function createLinks(nodes) {
     if (nodes.children.length === 0) {
-        const { name, depth, id } = nodes
+        const { name, id } = nodes
 
         let credit = ''
 
-        if (isPublicApis(id)) {
-            credit = ` - Powered by [Public APIs](https://github.com/public-apis/public-apis)`
+        if (name === 'Public APIs') {
+            credit = ` - Powered by <a href="https://github.com/public-apis/public-apis">Public APIs</a>`
         }
 
-        return `\n${createIndentation(depth)}* [${name}](#${id})${credit}`
+        return `<li><a href="#${id}">${name}${credit}</a></li>`
     } else {
-        const { name, depth, id } = nodes
+        const { name, id } = nodes
 
         const children = nodes.children.map(createLinks).join('')
 
-        return `\n${createIndentation(depth)}* [${name}](#${id}) ${children}`
+        return `<details><summary id="${id}">${name}</summary>${children}</details>`
     }
 }
 

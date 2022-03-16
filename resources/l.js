@@ -5,9 +5,10 @@ const {
     indieHacking,
     jobs,
     assets,
-    readingAndWriting,
+    community,
+    infrastructure,
 } = require('../constants/categories')
-const { website, youtube, gumroad } = require('../constants/links')
+const { website, youtube, gumroad, github, twitter } = require('../constants/links')
 
 module.exports = [
     {
@@ -87,6 +88,49 @@ module.exports = [
             [website]: 'https://larajobs.com/',
         },
         icon: 'https://larajobs.com/favicon-32x32.png',
+    },
+    {
+        name: 'Layoutit Grid',
+        categories: [programming.codeGenerators],
+        description:
+            'Quickly design web layouts, and get HTML and CSS code. Learn CSS Grid visually and build web layouts with our interactive CSS Grid Generator.',
+        links: {
+            [website]: 'https://grid.layoutit.com/',
+            [github]: 'https://github.com/Leniolabs/layoutit-grid',
+        },
+        icon: 'https://grid.layoutit.com/img/icons/icon-128x128.png',
+    },
+    {
+        name: 'Learn CSS',
+        categories: [programming.learn],
+        description: 'An evergreen CSS course and reference to level up your web styling expertise.',
+        links: {
+            [website]: 'https://web.dev/learn/css/',
+        },
+        icon: 'https://web.dev/images/favicon-32x32.png',
+    },
+    {
+        name: 'Learn Enough to Be Dangerous',
+        categories: [programming.learn],
+        description:
+            'Learn Enough to Be Dangerous is designed to unleash your technical genius by teaching you technical sophistication.',
+        links: {
+            [website]: 'https://www.learnenough.com/',
+            [youtube]: 'https://www.youtube.com/c/LearnEnough',
+            [twitter]: 'https://twitter.com/learnenough',
+        },
+        icon: 'https://www.learnenough.com/le/apple-touch-icon-precomposed.png',
+    },
+    {
+        name: 'Learn JavaScript',
+        description:
+            'Learn JavaScript in an interactive environment. Read short lessons, take notes, and complete challenges directly in your browser.',
+        categories: [programming.learn, programming.codeChallenges],
+        links: {
+            [website]: 'https://learnjavascript.online',
+        },
+        icon: 'https://learnjavascript.online/assets/favicons/favicon-32x32.png',
+        keywords: ['learn javascript', 'learn javascript online', 'interactive course'],
     },
     {
         name: 'Learn Programmatic SEO',
@@ -182,6 +226,15 @@ module.exports = [
         icon: 'https://librestock.com/static/images/favicon-96x96.png',
     },
     {
+        name: 'Like I Am Five',
+        categories: [programming.learn],
+        description: 'Learn to code through real-life projects in less than 4 hours.',
+        links: {
+            [website]: 'https://www.likeiamfive.com/',
+        },
+        icon: 'https://uploads-ssl.webflow.com/5f663366aa4dbb5f5ba60eb6/600f0002c4e610106b7a2dc8_Favicon.png',
+    },
+    {
         name: 'Line Icon Pack',
         categories: [assets.icons],
         description:
@@ -199,7 +252,7 @@ module.exports = [
         links: {
             [website]: 'https://lineicons.com/',
         },
-        icon: 'https://lineicons.com/wp-content/themes/xt-lineicons/assets/img/favicon.png',
+        icon: 'https://user-images.githubusercontent.com/76911582/137953217-de9272df-bdbb-4c5f-9307-f5fb58839cf7.png',
     },
     {
         name: 'LinkedIn Learning',
@@ -212,13 +265,33 @@ module.exports = [
         icon: 'https://static-exp1.licdn.com/scds/common/u/images/logos/favicons/v1/favicon.ico',
     },
     {
+        name: 'Linode',
+        categories: [infrastructure.cloudComputing],
+        description:
+            "Simplify your infrastructure with Linode's cloud computing and hosting solutions and develop, deploy, and scale faster and easier.",
+        links: {
+            [website]: 'https://www.linode.com/',
+        },
+        icon: 'https://www.linode.com/favicon.ico',
+    },
+    {
         name: 'Lobsters',
-        categories: [readingAndWriting.platforms],
+        categories: [community.blogsAndForums],
         description: 'Lobsters is a computing-focused community centered around link aggregation and discussion.',
         links: {
             [website]: 'https://lobste.rs/',
         },
         icon: 'https://lobste.rs/apple-touch-icon-144.png',
+    },
+    {
+        name: 'Logology',
+        categories: [assets.logos],
+        description:
+            'No random generation and no symbols from a free database. Everything was crafted from the ground-up!',
+        links: {
+            [website]: 'https://www.logology.co/',
+        },
+        icon: 'https://www.logology.co/images/favicon-32x32.png',
     },
     {
         name: 'LogoTaco',

@@ -1,5 +1,5 @@
-const { toolsAndUtilities, uiDesign, assets, programming } = require('../constants/categories')
-const { website } = require('../constants/links')
+const { toolsAndUtilities, uiDesign, assets, programming, indieHacking } = require('../constants/categories')
+const { website, github, twitter } = require('../constants/links')
 
 module.exports = [
     {
@@ -93,6 +93,16 @@ module.exports = [
         icon: 'https://openvim.com/icon.png',
     },
     {
+        name: 'OpenChakra',
+        categories: [programming.uiKitsAndLibraries],
+        description: 'React JSX visual editor for Chakra UI.',
+        links: {
+            [website]: 'https://openchakra.app/',
+            [github]: 'https://github.com/premieroctet/openchakra',
+        },
+        icon: 'https://openchakra.app/favicon.ico',
+    },
+    {
         name: 'Opensource.Builders',
         categories: [toolsAndUtilities.general],
         description: 'Find open-source alternatives to popular software.',
@@ -111,6 +121,27 @@ module.exports = [
         },
         icon:
             'https://cdn-production-opera-website.operacdn.com/staticfiles/assets/images/favicon/favicon-32x32.d80e4bdc6a9f.png',
+    },
+    {
+        name: 'Orapa - Sales Templates',
+        categories: [indieHacking.marketing],
+        description: 'Categorized by industry, job title and department. So you can reach you dream customers faster.',
+        links: {
+            [website]: 'https://www.orapa.co/data',
+        },
+        icon: 'https://uploads-ssl.webflow.com/5fe0663168984aa818b74ba5/5fe368f5753d1170023baf41_icon.png',
+    },
+    {
+        name: 'Orbit',
+        categories: [indieHacking.utilities],
+        description:
+            'Orbit is the community experience platform for developers, helping organizations build enthusiastic communities of technology adopters.',
+        links: {
+            [website]: 'https://orbit.love/',
+            [github]: 'https://github.com/orbit-love/',
+            [twitter]: 'https://twitter.com/OrbitModel',
+        },
+        icon: 'https://orbit.love/assets/images/favicon/32x32.png',
     },
     {
         name: 'Orion',

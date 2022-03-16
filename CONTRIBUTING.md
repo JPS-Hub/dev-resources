@@ -1,12 +1,17 @@
 # Contributing
 
+---
+> ❗️ The README file is auto-generated on every `push` and/or `merge`, so please **do not** edit it.
+> Changes related to resources should happen within the `/resources` folder.
+---
+
 Everyone is welcome to collaborate to this project, but please take into consideration the following:
 
 -   resources should align with the purpose of the project
 -   resources shouldn't be a duplicate; a text search on the README file should be enough to find this answer
 -   the list of resources is written in JavaScript; if you need assistance on this matter, please open an issue with the resource's information
 -   make sure to check all items listed on the [pull request template](PULL_REQUEST_TEMPLATE.md) before submitting your contribution
--   the [website](https://devresourc.es) is synchronized with this repository every Wednesday
+-   currently, there is no fixed schedule for when the [website](https://devresourc.es/?ref=github-contributing) will be synchronized with this repository, though we strive to keep them as synchronized as possible
 
 ## Adding a resource
 
@@ -18,6 +23,8 @@ Everyone is welcome to collaborate to this project, but please take into conside
 Each resource belongs to an object, as such:
 
 ```javascript
+// File: resources/f.js
+
 {
     name: 'freeCodeCamp',
     description:
@@ -27,8 +34,8 @@ Each resource belongs to an object, as such:
         [website]: 'https://www.freecodecamp.org',
         [youtube]: 'https://www.youtube.com/c/freecodecamp',
     },
-    icon: 'https://www.freecodecamp.org/news/favicon.png', // Optional
-    keywords: ['html', 'css', 'javascript', 'development'], // Optional
+    icon: 'https://www.freecodecamp.org/news/favicon.png', // Optional, but good for the README file
+    keywords: ['html', 'css', 'javascript', 'development'], // Optional, but useful for the search feature on the website
 },
 ```
 
@@ -42,12 +49,9 @@ Observe that:
 -   `keywords` is an array of strings, which also should not include line breaks `(\n)` nor the pipe symbol `(|)`
 -   `icon` and `keywords` are the only optional properties, all others are required, with `categories` and `links` containing at least one value
 -   the `description` property can be custom or grabbed from the resource's metadata included in the `<head>` tag of the website's HTML document
+    -   you can use https://metatags.io to easily copy the description
 -   the `icon` property can also be grabbed from the resource's metadata included in the `<head>` tag or by doing the following:
-
-    1. navigate to https://favicongrabber.com
-    2. insert the resource's URL
-    3. open the result image in a new tab by right clicking followed by "Open in new tab" or dragging it to the browser's tab bar
-    4. use the new tab's URL
+    -   you can use https://favicongrabber.com to easily copy the image's url; OBS: it often fails, so just try again until it works
 
 ## Editing a resource
 
@@ -58,6 +62,10 @@ If you find that an existing resource could benefit from some editing, feel free
 Renaming a category or changing the tree structure should happen as infrequently as possible, although it is allowed if the current structure can be improved.
 
 Opening a new category is fine, as long as there isn't another category that could serve the same purpose.
+
+## External integrations
+
+As of now, the "Public APIs" section is powered by the [Public APIs project](https://github.com/public-apis/public-apis), so any additions to this section should be done to their repository.
 
 ## Other contributions
 

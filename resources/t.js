@@ -1,12 +1,5 @@
-const {
-    assets,
-    programming,
-    readingAndWriting,
-    toolsAndUtilities,
-    indieHacking,
-    jobs,
-} = require('../constants/categories')
-const { website, youtube } = require('../constants/links')
+const { assets, programming, community, toolsAndUtilities, indieHacking, jobs } = require('../constants/categories')
+const { website, youtube, github, twitter, linkedin } = require('../constants/links')
 
 module.exports = [
     {
@@ -29,6 +22,16 @@ module.exports = [
         icon: 'https://www.tailorbrands.com/wp-content/uploads/2016/07/cropped-icon_red-32x32.png',
     },
     {
+        name: 'TailwindComponents',
+        categories: [programming.uiKitsAndLibraries],
+        description:
+            'Tailwind CSS examples from components by the community. Tailwind chart, grids, inputs, forms, templates and much more.',
+        links: {
+            [website]: 'https://tailwindcomponents.com/',
+        },
+        icon: 'https://tailwindcomponents.com/favicon-32x32.png',
+    },
+    {
         name: 'Tailwind CSS',
         categories: [programming.uiKitsAndLibraries],
         description: 'Documentation for the Tailwind CSS framework.',
@@ -38,14 +41,58 @@ module.exports = [
         icon: 'https://tailwindcss.com/favicon-32x32.png',
     },
     {
+        name: 'Tailwind Toolbox',
+        categories: [programming.templates],
+        description:
+            'Open source starter templates and components, a directory of handy building kits, generators, plugins and useful tools to kick start your Tailwind CSS project.',
+        links: {
+            [website]: 'https://tailwindtoolbox.com/',
+        },
+        icon: 'https://tailwindtoolbox.com/favicon-32x32.png',
+    },
+    {
+        name: 'Tech Interview Pro',
+        categories: [jobs.interviews],
+        description:
+            'Learn the secrets to getting a software engineering job at a big tech company. Using years of industry experience, I have condensed my knowledge to the material that is most important for passing the coding interview and landing your dream tech job.',
+        links: {
+            [website]: 'https://www.techseries.dev/',
+        },
+        icon:
+            'https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/sites/59001/images/QuFIBNIRSwmZ1ZXkLmSQ_favicon.png?v=2',
+        keywords: ['algorithms', 'data structures'],
+    },
+    {
+        name: 'Tech Jobs For Good',
+        categories: [jobs.boards],
+        description:
+            'Tech Jobs for Good helps connect software engineers to jobs at organizations working on social and environmental issues.',
+        links: {
+            [website]: 'https://techjobsforgood.com/',
+            [twitter]: 'https://twitter.com/TechJobsforGood',
+            [linkedin]: 'https://www.linkedin.com/company/tech-jobs-for-good/',
+        },
+        icon: 'https://techjobsforgood.com/static/jobs/T_favicon.ico',
+    },
+    {
         name: 'TechCrunch',
-        categories: [readingAndWriting.platforms],
+        categories: [community.blogsAndForums],
         description:
             'TechCrunch - Reporting on the business of technology, startups, venture capital funding, and Silicon Valley.',
         links: {
             [website]: 'https://techcrunch.com/',
         },
         icon: 'https://techcrunch.com/wp-content/uploads/2015/02/cropped-cropped-favicon-gradient.png?w=32',
+    },
+    {
+        name: 'Tech Blogs',
+        categories: [community.blogsAndForums],
+        description: 'This is a list of Awesome Tech Blogs. Add yourself.',
+        links: {
+            [website]: 'https://tech-blogs.dev/',
+            [github]: 'https://github.com/MarkoDenic/awesome-tech-blogs',
+        },
+        icon: 'https://tech-blogs.dev/favicon-32x32.png',
     },
     {
         name: 'Templated',
@@ -116,6 +163,15 @@ module.exports = [
         icon: 'https://testing-library.com/img/octopus-32x32.png',
     },
     {
+        name: 'Testing Playground',
+        categories: [programming.testing],
+        description: 'Simple and complete DOM testing playground that encourage good testing practices.',
+        links: {
+            [website]: 'https://testing-playground.com/',
+        },
+        icon: 'https://testing-playground.com/72-production.3633b358.png',
+    },
+    {
         name: 'TestingWhiz',
         categories: [programming.testing],
         description:
@@ -124,6 +180,20 @@ module.exports = [
             [website]: 'https://www.testing-whiz.com/',
         },
         icon: 'https://www.testing-whiz.com/favicon.ico',
+    },
+    {
+        name: 'Themeselection',
+        categories: [programming.templates],
+        description:
+            ' Selected high quality, modern design, professional and easy-to-use Free Admin Dashboard Template, HTML Themes and UI Kits to create your applications faster.',
+        keywords: ['HTML', 'css', 'Admin template', 'bootstrap', 'Vuejs admin templates', 'UI kits', 'Freebies'],
+        links: {
+            [website]: 'https://themeselection.com/',
+            [github]: 'https://github.com/themeselection',
+            [twitter]: 'https://twitter.com/Theme_Selection',
+            [youtube]: 'https://www.youtube.com/channel/UCuryo5s0CW4aP83itLjIdZg/featured',
+        },
+        icon: 'https://themeselection.com/wp-content/uploads/2018/07/favicon.ico',
     },
     {
         name: 'The A11Y Project',
@@ -154,6 +224,16 @@ module.exports = [
         icon: 'https://changelog.com/favicon.ico',
     },
     {
+        name: 'The Coding Interview',
+        categories: [jobs.interviews],
+        description:
+            'Everything you need to ace the coding interview all in one place. Crack the coding interview with just 5 minutes of preparation a day.',
+        links: {
+            [website]: 'https://www.thecodinginterview.com/',
+        },
+        icon: 'https://uploads-ssl.webflow.com/5f17477084d0f15f5288e7d1/5f23f0b1139fc4dfad8b714f_favicon.png',
+    },
+    {
         name: 'The Coding Train',
         categories: [programming.youtubeChannels],
         description:
@@ -163,6 +243,26 @@ module.exports = [
             [youtube]: 'https://www.youtube.com/channel/UCvjgXvBlbQiydffZU7m1_aw',
         },
         icon: 'https://www.youtube.com/s/desktop/d743f786/img/favicon_96.png',
+    },
+    {
+        name: 'The Future of Programming Languages at the Confluence of Paradigms',
+        categories: [programming.youtubeChannels],
+        description:
+            'Talk on The Future of Programming Languages at the Confluence of Paradigms by Robert "Uncle Bob" Martin',
+        links: {
+            [youtube]: 'https://www.youtube.com/watch?v=ya1xDCCMh7g',
+        },
+        icon: 'https://www.youtube.com/s/desktop/d743f786/img/favicon_96.png',
+    },
+    {
+        name: 'The Hammerstone Podcast',
+        categories: [indieHacking.podcasts],
+        description:
+            "Listen in on Sean's and Aaron's weekly conversation. No intro, no editing, no music. Proudly hosted on transistor.fm!",
+        links: {
+            [website]: 'https://hammerstone.dev/podcast',
+        },
+        icon: '',
     },
     {
         name: 'The Net Ninja',
@@ -177,6 +277,26 @@ module.exports = [
             'html css javascript tutorials "web design" "web development" development "front-end development" wordpress mvc "responsive design" "beginner html" "beginner ...',
         ],
         icon: 'https://www.thenetninja.co.uk/favicon.ico',
+    },
+    {
+        name: 'Thirus',
+        categories: [programming.youtubeChannels],
+        description:
+            'Thirus (pronounced "thigh-rus") is an effort to bring hundreds of simple web development tips and tutorials together that you can consume regularly on your coding journey. I am Shruti Balasa - the owner of this channel. I\'m a Full Stack Web Developer, Mentor, Course Creator, Tech Speaker and now a Youtuber from Bangalore, India.',
+        links: {
+            [youtube]: 'https://www.youtube.com/channel/UCDQTzZ871T7uJpx9yeMPhAw',
+        },
+        icon: 'https://www.youtube.com/s/desktop/d743f786/img/favicon_96.png',
+    },
+    {
+        name: 'This VS That',
+        categories: [programming.learn],
+        links: {
+            [website]: 'https://thisthat.dev/',
+        },
+        description: 'What is the difference between ___ and ___ in the front-end development?',
+        keywords: ['CSS', 'DOM', 'HTML', 'JavaScript', 'React', 'TypeScript'],
+        icon: 'https://thisthat.dev/assets/favicon.png',
     },
     {
         name: 'TinyPNG',
@@ -198,6 +318,26 @@ module.exports = [
         },
         icon:
             'https://images.squarespace-cdn.com/content/v1/5c3f602b96e76f6da92e8ded/1547762430194-TCY13GQ3WL1GEQQCNIBJ/ke17ZwdGBToddI8pDm48kDaNRrNi77yKIgWxrt8GYAFZw-zPPgdn4jUwVcJE1ZvWhcwhEtWJXoshNdA9f1qD7WT60LcluGrsDtzPCYop9hMAtVe_QtwQD93aIXqwqJR_bmnO89YJVTj9tmrodtnPlQ/favicon.ico?format=100w',
+    },
+    {
+        name: 'tl;dr Marketing',
+        categories: [toolsAndUtilities.seo],
+        description:
+            'Get the latest breaking news and trends about SEO, paid media and social media without all the fluff.',
+        links: {
+            [website]: 'https://tldrmarketing.com/',
+        },
+        icon: 'https://tldrmarketing.com/wp-content/uploads/2020/05/cropped-tldr-logo-1000-32x32.png',
+    },
+    {
+        name: 'toast.log',
+        categories: [toolsAndUtilities.browsersAndExtensions],
+        description:
+            "See errors, warnings, and logs as they happen on your site — without having to open the browser’s console. Find bugs you didn't know were there via notifications in our unique toast format.",
+        links: {
+            [website]: 'https://toastlog.com/',
+        },
+        icon: 'https://toastlog.com/img/favicon/favicon-32x32.png',
     },
     {
         name: 'Tooplate',
@@ -231,6 +371,40 @@ module.exports = [
             [youtube]: 'https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA',
         },
         icon: 'https://www.youtube.com/s/desktop/d743f786/img/favicon_96.png',
+    },
+    {
+        name: 'Transform Tools',
+        categories: [toolsAndUtilities.general],
+        description: 'A polyglot web converter.',
+        keywords: [
+            'Big Query',
+            'Flow',
+            'Go Bson',
+            'Go',
+            'GraphQL',
+            'HTML',
+            'JSDoc',
+            'JSON Schema',
+            'JSON',
+            'Kotlin',
+            'MobX-State-Tree Model',
+            'Mongoose Schema',
+            'MySQL',
+            'React Native',
+            'React PropTypes',
+            'Rust Serde',
+            'SVG',
+            'Sarcastic',
+            'Scala Case Class',
+            'TailwindCSS',
+            'TypeScript',
+            'YAML',
+            'io-ts',
+        ],
+        links: {
+            [github]: 'https://github.com/ritz078/transform',
+            [website]: 'https://transform.tools',
+        },
     },
     {
         name: 'Treehouse',

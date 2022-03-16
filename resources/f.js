@@ -1,7 +1,25 @@
-const { toolsAndUtilities, assets, uiDesign, infrastructure, programming, jobs } = require('../constants/categories')
-const { website, youtube } = require('../constants/links')
+const {
+    toolsAndUtilities,
+    assets,
+    uiDesign,
+    infrastructure,
+    programming,
+    jobs,
+    community,
+} = require('../constants/categories')
+const { website, youtube, facebook, twitter, linkedin, github } = require('../constants/links')
 
 module.exports = [
+    {
+        name: 'Fake Img',
+        categories: [toolsAndUtilities.imageAndVideoEditing],
+        description:
+            'A little tool that generates placeholder images with an URL. Choose the size, the colors, even the text. ',
+        links: {
+            [website]: 'https://fakeimg.pl/',
+        },
+        icon: 'https://fakeimg.pl/favicon.ico',
+    },
     {
         name: 'Fathom',
         categories: [toolsAndUtilities.analytics],
@@ -20,7 +38,7 @@ module.exports = [
         links: {
             [website]: 'https://feathericons.com/',
         },
-        icon: 'https://feathericons.com/icons/icon-96x96.png',
+        icon: 'https://feathericons.com/favicon-32x32.png',
     },
     {
         name: 'Figma',
@@ -58,11 +76,22 @@ module.exports = [
     },
     {
         name: 'Firebase',
-        categories: [infrastructure.hosting, programming.databases],
+        categories: [infrastructure.hosting, infrastructure.databases, infrastructure.serverless, infrastructure.auth],
         description:
             'Firebase is Google’s mobile platform that helps you quickly develop high-quality apps and grow your business.',
         links: {
             [website]: 'https://firebase.google.com/',
+        },
+        icon:
+            'https://www.gstatic.com/devrel-devsite/prod/v45f61267e22826169cf5d5f452882f7812c8cfb5f8b103a48c0d88727908b295/firebase/images/touchicon-180.png',
+    },
+    {
+        name: 'Firestore',
+        categories: [infrastructure.databases],
+        description:
+            'Cloud Firestore is a flexible, scalable database for mobile, web, and server development from Firebase and Google Cloud. Like Firebase Realtime Database, it keeps your data in sync across client apps through realtime listeners and offers offline support for mobile and web so you can build responsive apps that work regardless of network latency or Internet connectivity. Cloud Firestore also offers seamless integration with other Firebase and Google Cloud products, including Cloud Functions.',
+        links: {
+            [website]: 'https://firebase.google.com/docs/firestore',
         },
         icon:
             'https://www.gstatic.com/devrel-devsite/prod/v45f61267e22826169cf5d5f452882f7812c8cfb5f8b103a48c0d88727908b295/firebase/images/touchicon-180.png',
@@ -97,6 +126,25 @@ module.exports = [
         icon: 'https://www.mozilla.org/media/img/favicons/firefox/browser/nightly/favicon-196x196.f6d874cabab4.png',
     },
     {
+        name: 'Fireship',
+        description: 'High-intensity ⚡ code tutorials to help you build & ship your app faster. Subscribe for new videos every week covering intermediate to advanced lessons about JavaScript, Flutter, Firebase, and modern app development. The original home of #100SecondsOfCode and #CodeThisNotThat. Created by Jeff Delaney.',
+        categories: [programming.youtubeChannels],
+        links: {
+            [website]: 'https://www.youtube.com/c/Fireship/featured',
+        },
+        icon: 'https://www.youtube.com/s/desktop/b349a03a/img/favicon_96x96.png',
+        keywords: ['#CodeThisNotThat', '#100SecondsOfCode', 'javaScript', 'flutter', 'firebase', 'coding tutorials', 'Jeff Delaney', 'development', 'angular', 'git', 'nextJS', 'developer productivity', 'top N lists']
+    },
+    {
+        name: 'First Timers Only',
+        categories: [community.hacktoberfest],
+        description: 'Find the best opportunities to create a pull request for the first time.',
+        links: {
+            [website]: 'https://www.firsttimersonly.com/',
+        },
+        icon: '',
+    },
+    {
         name: 'Fiverr',
         categories: [jobs.freelancing],
         description: 'One marketplace, millions of professional services. Browse. Buy. Done.',
@@ -107,6 +155,20 @@ module.exports = [
             'https://assetsv2.fiverrcdn.com/assets/v2_globals/apple-touch-icon-76x76-e74f7616f5a5f00eb18aa6426eeac69c.png',
     },
     {
+        name: 'FlashDrive.io',
+        categories: [infrastructure.hosting],
+        description:
+            'HostingFlashDrive.io is a PaaS service similar to Heroku with a developer-centric approach and a free tier for developers and micro-services.',
+        links: {
+            [website]: 'https://flashdrive.io',
+            [twitter]: 'https://twitter.com/flashdriveio',
+            [facebook]: 'https://www.facebook.com/flashdriveio',
+            [linkedin]: 'https://www.linkedin.com/company/flashdrive/',
+            [github]: 'https://github.com/flashdriveio',
+        },
+        icon: 'https://flashdrive.io/assets/images/favicon.ico',
+    },
+    {
         name: 'Flaticon',
         categories: [assets.icons],
         description: 'Download all icons in SVG, PSD, PNG, EPS format or as webfonts.',
@@ -114,6 +176,16 @@ module.exports = [
             [website]: 'https://www.flaticon.com',
         },
         icon: 'https://media.flaticon.com/dist/min/img/apple-icon-76x76-precomposed.png',
+    },
+    {
+        name: 'Flexbox Adventure',
+        categories: [programming.learn],
+        description:
+            'Flexbox layout has a lot of properties and nuances that are hard to remember, learn it in the fun and interesting way that works – a CSS RPG game!',
+        links: {
+            [website]: 'https://codingfantasy.com/games/flexboxadventure',
+        },
+        icon: 'https://codingfantasy.com/favicon.ico',
     },
     {
         name: 'Flexbox Defense',
@@ -195,7 +267,7 @@ module.exports = [
         links: {
             [website]: 'https://fontawesome.com',
         },
-        icon: 'https://fontawesome.com/images/favicons/favicon-96x96.png',
+        icon: 'https://fontawesome.com/images/favicon/icon.svg',
     },
     {
         name: 'Font Space',
@@ -255,7 +327,7 @@ module.exports = [
         links: {
             [website]: 'https://fontpair.co/',
         },
-        icon: 'https://fontpair.co/img/favicon.png',
+        icon: 'https://uploads-ssl.webflow.com/5df11841b7e5a489e7c67859/6161da7091c49496c05aeff4_fontpair-logo-primary-dark.svg',
     },
     {
         name: 'Fonts In Use',
@@ -312,6 +384,15 @@ module.exports = [
             [website]: 'https://freellustrations.com',
         },
         icon: 'https://freellustrustrations.s3.us-east-2.amazonaws.com/static/favicon.png',
+    },
+    {
+        name: 'Free JavaScript Resources',
+        categories: [programming.learn],
+        description: 'Learn JavaScript for free',
+        links: {
+            [website]: 'https://www.java5cript.com/',
+        },
+        icon: 'https://www.java5cript.com/favicon.ico',
     },
     {
         name: 'freeCodeCamp',
@@ -431,6 +512,17 @@ module.exports = [
         icon: 'https://frontendfoc.us/favicon.png',
     },
     {
+        name: 'Frontend Happy Hour',
+        keywords: ['frontend', 'web', 'web development'],
+        categories: [programming.podcasts],
+        description:
+            'A podcast featuring a panel of Software Engineers from Netflix, Twitch, & Atlassian talking over drinks about all things Front End development.',
+        links: {
+            [website]: 'https://frontendhappyhour.com/',
+        },
+        icon: 'https://frontendhappyhour.com/favicon.ico',
+    },
+    {
         name: 'Frontend Masters',
         categories: [programming.learn],
         description: 'Advance your skills with in-depth, modern JavaScript and front-end engineering courses.',
@@ -441,13 +533,43 @@ module.exports = [
     },
     {
         name: 'Frontend Mentor',
-        categories: [programming.learn],
+        categories: [programming.learn, programming.codeChallenges],
         description:
             'Improve your front-end skills by building real projects. Solve real-world HTML, CSS and JavaScript challenges whilst working to professional designs.',
         links: {
             [website]: 'https://www.frontendmentor.io/',
         },
         icon: 'https://www.frontendmentor.io/static/favicon/favicon-32x32.png',
+        keywords: ['frontend', 'html', 'css', 'flexbox', 'grid', 'rwd', 'mobile-first', 'javascript'],
+    },
+    {
+        name: 'Frontend Practice',
+        categories: [programming.learn],
+        description: 'A collection of real websites for developers to recreate to improve and test their skills.',
+        links: {
+            [website]: 'https://www.frontendpractice.com/',
+        },
+        icon: 'https://www.frontendpractice.com/icons/icon-96x96.png',
+    },
+    {
+        name: 'Frontend Tips',
+        description: 'Tiny tips, tricks & best practices for front-end development',
+        categories: [programming.learn],
+        keywords: ['Front-end tips', 'Front-end tricks', 'Best front-end practices'],
+        links: {
+            [website]: 'https://getfrontend.tips/',
+        },
+        icon: 'https://getfrontend.tips/img/favicon.png',
+    },
+    {
+        name: 'Frontend Toolkit',
+        categories: [toolsAndUtilities.general],
+        description:
+            'Frontend Toolkit is a customizable dashboard for your recurring Frontend tasks. Base64 encoder/decoder, SVG optimizations, SVG to JSX and many more!',
+        links: {
+            [website]: 'https://www.fetoolkit.io/',
+        },
+        icon: 'https://www.fetoolkit.io/assets/favicon-32x32.png',
     },
     {
         name: 'Frontendor',

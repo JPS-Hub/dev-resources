@@ -1,5 +1,24 @@
-const { jobs, uiDesign, assets, programming, toolsAndUtilities } = require('../constants/categories')
-const { website, youtube } = require('../constants/links')
+const {
+    jobs,
+    uiDesign,
+    assets,
+    infrastructure,
+    programming,
+    toolsAndUtilities,
+    indieHacking,
+    community,
+} = require('../constants/categories')
+const {
+    website,
+    youtube,
+    github,
+    twitter,
+    discord,
+    instagram,
+    productHunt,
+    facebook,
+    gumroad,
+} = require('../constants/links')
 
 module.exports = [
     {
@@ -14,7 +33,7 @@ module.exports = [
     },
     {
         name: 'Canva',
-        categories: [uiDesign.colorPalettes, assets.fonts, programming.templates],
+        categories: [uiDesign.color, assets.fonts, programming.templates],
         description:
             'Canva is a graphic design platform, used to create social media graphics, presentations, posters, documents and other visual content. ',
         links: {
@@ -40,6 +59,16 @@ module.exports = [
             [website]: 'https://carbon.now.sh',
         },
         icon: 'https://carbon.now.sh/static/brand/apple-touch-icon.png',
+    },
+    {
+        name: 'Cassandra',
+        categories: [infrastructure.databases],
+        description:
+            'Cassandra is a free tool which is designed to manage a large amount of data across a wide range of servers. The tool offers support for replicating across multiple datacenters.',
+        links: {
+            [website]: 'http://cassandra.apache.org/',
+        },
+        icon: 'https://cassandra.apache.org/favicon.ico',
     },
     {
         name: 'Chakra',
@@ -79,6 +108,14 @@ module.exports = [
         icon: 'https://cheatography.com/images/cheatography-iphone.png',
     },
     {
+        name: 'Cheat Sheet Maker',
+        categories: [programming.docsAndCheatsheets],
+        description: 'Create and share cheat sheets to study and work with cheat sheet maker.',
+        links: {
+            [website]: 'https://cheatsheetmaker.com/',
+        },
+    },
+    {
         name: 'Check My Links',
         categories: [toolsAndUtilities.browsersAndExtensions],
         description: 'Check My Links is a link checker that crawls through your webpage and looks for broken links.',
@@ -109,6 +146,19 @@ module.exports = [
             'https://uploads-ssl.webflow.com/5ba4b3c973b5d218459f7e6f/5f33ce7fe8e7463f6c74c26f_checklist-web-image.png',
     },
     {
+        name: 'Choc UI',
+        categories: [programming.uiKitsAndLibraries],
+        description:
+            'Choc UI is a set of accessible and reusable components that are commonly used in web applications.',
+        links: {
+            [website]: 'https://choc-ui.tech/',
+            [twitter]: 'https://twitter.com/choc_ui',
+            [discord]: 'https://discord.gg/XcD8bNv7Ne',
+            [github]: 'https://github.com/anubra266/choc-ui',
+        },
+        icon: 'https://choc-ui.tech/favicon-32x32.png',
+    },
+    {
         name: 'Chrome',
         categories: [toolsAndUtilities.browsersAndExtensions],
         description:
@@ -137,6 +187,17 @@ module.exports = [
             [website]: 'https://www.google.com/chrome/dev/',
         },
         icon: 'https://www.google.com/chrome/static/images/favicons/favicon-96x96.png',
+    },
+    {
+        name: 'Clerk.dev',
+        categories: [infrastructure.auth],
+        description:
+            "Authentication and user management for developers that's simple, secure, and scalable with any platform or language.",
+        keywords: ['react', 'next.js', 'auth', ' user management', 'react auth', 'next.js auth', 'javascript auth'],
+        links: {
+            [website]: 'https://clerk.dev',
+        },
+        icon: 'https://clerk.dev/favicon/favicon-32x32.png',
     },
     {
         name: 'Clideo',
@@ -175,6 +236,37 @@ module.exports = [
             [website]: 'https://www.jetbrains.com/clion/',
         },
         icon: 'https://www.jetbrains.com/favicon-32x32.png',
+    },
+    {
+        name: 'Cloudflare Pages',
+        categories: [infrastructure.serverless, infrastructure.hosting],
+        description:
+            'Cloudflare Pages is a JAMstack platform for frontend developers to collaborate and deploy websites.',
+        links: {
+            [website]: 'https://pages.cloudflare.com/',
+        },
+        icon: 'https://pages.cloudflare.com/resources/logo/logo.svg',
+        keywords: ['jamstack', 'serverless', 'hosting', 'development'],
+    },
+    {
+        name: 'Cloudflare Workers',
+        categories: [infrastructure.serverless],
+        description:
+            'Cloudflare workers allow you to host serverless code. The free plan is also ideal for static site hosting',
+        links: {
+            [website]: 'https://workers.cloudflare.com/',
+        },
+        icon: 'https://workers.cloudflare.com/favicon.ico',
+    },
+    {
+        name: 'cmd challenge',
+        categories: [toolsAndUtilities.commandLine],
+        description: 'Learn the command line.',
+        links: {
+            [website]: 'https://cmdchallenge.com/',
+            [twitter]: 'https://twitter.com/thecmdchallenge',
+        },
+        icon: 'https://cmdchallenge.com/favicon.ico',
     },
     {
         name: 'Code to go',
@@ -238,6 +330,24 @@ module.exports = [
         icon: 'https://www.codecademy.com/favicon.ico',
     },
     {
+        name: 'CodeCombat',
+        categories: [programming.learn],
+        description:
+            'Learn programming languages by playing the Role Playing Game. Different languages, beginner-friendly learning curve.',
+        keywords: [
+            'Python',
+            'JavaScript',
+            'CoffeeScript',
+            'Lua',
+            'C++',
+            'Java',
+        ],
+        links: {
+            [website]: 'https://www.codecombat.com/',
+        },
+        icon: 'https://www.codecombat.com/favicon.ico',
+    },
+    {
         name: 'CodeChef',
         categories: [programming.codeChallenges],
         description:
@@ -252,6 +362,15 @@ module.exports = [
             [website]: 'https://www.codechef.com/',
         },
         icon: 'https://www.codechef.com/misc/favicon.ico',
+    },
+    {
+        name: 'Codeconia',
+        categories: [community.blogsAndForums],
+        description: 'Learn programming with Codeconia.',
+        links: {
+            [website]: 'https://codeconia.com/',
+        },
+        icon: 'https://codeconia.com/wp-content/uploads/2020/11/cropped-favicon-32x32.png',
     },
     {
         name: 'CodeKit',
@@ -282,6 +401,16 @@ module.exports = [
             [website]: 'https://codemyui.com/',
         },
         icon: 'https://i1.wp.com/codemyui.com/wp-content/uploads/2017/02/cropped-logo-1.png?fit=32%2C32&ssl=1',
+    },
+    {
+        name: 'CodeNewbie',
+        keywords: ['careers', 'development', 'jobs'],
+        categories: [programming.podcasts],
+        description: 'Stories from people on their coding journey.',
+        links: {
+            [website]: 'https://www.codenewbie.org/podcast/',
+        },
+        icon: 'https://s3.amazonaws.com/codenewbie-assets/codenewbie-favicon-new.png',
     },
     {
         name: 'CodePen',
@@ -332,6 +461,17 @@ module.exports = [
             [website]: 'https://blog.codepen.io/radio/',
         },
         icon: 'https://blog.codepen.io/favicon.ico',
+    },
+    {
+        name: 'Codepen radio',
+        categories: [programming.podcasts],
+        description:
+            "A podcast all about what it's like running a small web software business. The good, the bad, and the ugly.",
+        links: {
+            [website]: 'https://blog.codepen.io/radio/',
+        },
+        icon:
+            'https://cpwebassets.codepen.io/assets/favicon/favicon-touch-de50acbf5d634ec6791894eba4ba9cf490f709b3d742597c6fc4b734e6492a5a.png',
     },
     {
         name: 'Codepip',
@@ -409,6 +549,17 @@ module.exports = [
         icon: 'https://codeshare.io/favicon.ico',
     },
     {
+        name: 'CodeTriage',
+        categories: [community.hacktoberfest],
+        description:
+            'Discover the easiest way to get started contributing to open source. Over 62,317 devs are helping 6,584 projects with our free, community developed tools',
+        links: {
+            [website]: 'https://www.codetriage.com/',
+        },
+        icon:
+            'https://www.codetriage.com/assets/favicon-3f3e475345be27562adee9d8e596a032785e3efd4496111cab0b1fe0a81ad722.ico',
+    },
+    {
         name: 'Codewars',
         categories: [programming.codeChallenges],
         description:
@@ -431,6 +582,16 @@ module.exports = [
             [website]: 'https://www.codewars.com/',
         },
         icon: 'https://www.codewars.com/favicon.ico',
+    },
+    {
+        name: 'Codewell',
+        categories: [programming.learn],
+        description: 'Improve your HTML and CSS skills by practicing on real world design templates.',
+        links: {
+            [website]: 'https://www.codewell.cc/',
+        },
+        icon: 'https://www.codewell.cc/favicon.ico',
+        keywords: ['frontend', 'html', 'css', 'flexbox', 'grid', 'javascript'],
     },
     {
         name: 'Coding Tech',
@@ -477,8 +638,29 @@ module.exports = [
         icon: 'http://collectui.com/img/favicon.ico',
     },
     {
+        name: 'Colorffy',
+        categories: [uiDesign.color],
+        description:
+            'Create many gradients and palettes or save one of many color schemes, for everyone who needs colors.',
+        links: {
+            [website]: 'https://colorffy.com/',
+            [twitter]: 'https://twitter.com/colorffy',
+            [instagram]: 'https://www.instagram.com/colorffyweb/',
+            [productHunt]: 'https://www.producthunt.com/posts/colorffy',
+        },
+        icon: 'https://colorffy.com/img/icons/msapplication-icon-144x144.png',
+    },
+    {
+        name: 'Color Contrast Checker',
+        categories: [toolsAndUtilities.accessibility],
+        description: 'Make sure your website has accessible colors.',
+        links: {
+            [website]: 'https://zarhasan.github.io/color-contrast-checker/',
+        },
+    },
+    {
         name: 'Color Hunt',
-        categories: [uiDesign.colorPalettes],
+        categories: [uiDesign.color],
         description:
             'Color Hunt is a free and open platform for color inspiration with thousands of trendy hand-picked color palettes.',
         links: {
@@ -488,7 +670,7 @@ module.exports = [
     },
     {
         name: 'Color-hex',
-        categories: [uiDesign.colorPalettes],
+        categories: [uiDesign.color],
         description:
             'Color hex is a easy to use tool to get the color codes information including color models (RGB,HSL,HSV and CMYK), css and html color codes.',
         links: {
@@ -518,7 +700,7 @@ module.exports = [
     },
     {
         name: 'Colormind',
-        categories: [uiDesign.colorPalettes],
+        categories: [uiDesign.color],
         description:
             'Generate color combinations in one click. Colormind creates cohesive color schemes using a deep neural net.',
         links: {
@@ -528,7 +710,7 @@ module.exports = [
     },
     {
         name: 'colors.lol',
-        categories: [uiDesign.colorPalettes],
+        categories: [uiDesign.color],
         description: 'A fun way to discover interesting color combinations.',
         links: {
             [website]: 'https://colors.lol/',
@@ -537,7 +719,7 @@ module.exports = [
     },
     {
         name: 'Colorsinspo',
-        categories: [uiDesign.colorPalettes],
+        categories: [uiDesign.color],
         description:
             'Colorsinspo is all in one resource to find everything about colors with extreme ease. Also, you will get Freebies, Inspirations, Color Tools, Gradients, and thousands of trendy hand-picked color palettes.',
         links: {
@@ -547,7 +729,7 @@ module.exports = [
     },
     {
         name: 'ColorSpace',
-        categories: [uiDesign.colorPalettes],
+        categories: [uiDesign.color],
         description:
             'Here you can find the perfect matching color scheme for your next project! Generate nice color palettes, color gradients and much more! Your space for everything that has to do with color!',
         links: {
@@ -605,6 +787,16 @@ module.exports = [
         icon: 'https://d12xoj7p9moygp.cloudfront.net/favicon/favicon-96x96.png',
     },
     {
+        name: 'Community List',
+        categories: [indieHacking.marketing],
+        description:
+            'Finding relevant communities takes hours and manual googling sucks. With Community List, quickly find relevant communities with all the data you need in one place.',
+        links: {
+            [website]: 'https://getcommunitylist.com/',
+        },
+        icon: 'https://getcommunitylist.com/assets/images/favicon.png?v=1961bf32',
+    },
+    {
         name: 'Compare pixels',
         categories: [uiDesign.utilities],
         description: 'Use this tool to quickly check differences between design mockups and the live website.',
@@ -638,6 +830,15 @@ module.exports = [
         icon: 'https://compressor.io/favicon.ico',
     },
     {
+        name: 'Computer Science courses with video lectures',
+        categories: [programming.learn],
+        description: 'List of Computer Science courses with video lectures.',
+        links: {
+            [github]: 'https://github.com/Developer-Y/cs-video-courses',
+        },
+        icon: 'https://github.githubassets.com/apple-touch-icon-114x114.png',
+    },
+    {
         name: 'Contrast Ratio',
         categories: [toolsAndUtilities.accessibility],
         description: 'Easily calculate color contrast ratios.',
@@ -655,8 +856,18 @@ module.exports = [
         icon: 'https://control.rocks/img/favicon-32x32.png',
     },
     {
+        name: 'Conversion Strategies Database',
+        categories: [indieHacking.marketing],
+        description:
+            'Join 881 smart founders and SaaS companies who are growing their sales with Swipe conversion strategies database.',
+        links: {
+            [gumroad]: 'https://gumroad.com/a/399283315/WCKkj',
+        },
+        icon: 'https://gumroad.com/favicon.ico',
+    },
+    {
         name: 'Coolors',
-        categories: [uiDesign.colorPalettes],
+        categories: [uiDesign.color],
         description: 'Generate or browse beautiful color combinations for your designs.',
         keywords: [
             'color scheme',
@@ -692,6 +903,27 @@ module.exports = [
         icon: 'https://coolors.co/assets/img/favicon.png',
     },
     {
+        name: 'CopyAI',
+        categories: [toolsAndUtilities.writing, indieHacking.utilities],
+        description:
+            "We have created the world's most advanced artificial intelligence copywriter that enables you to create marketing copy in seconds!",
+        links: {
+            [website]: 'https://www.copy.ai/',
+        },
+        icon:
+            'https://assets-global.website-files.com/5f4ec532319820f7c2ccd7a3/5f55620b7b806770e6becea2_32x32%20favico.png',
+    },
+    {
+        name: 'Copy Paste CSS',
+        categories: [uiDesign.inspiration],
+        description:
+            'Find inspiration with a collection of simple CSS elements to copy and paste ( button, box-shadow, text-input, color palette )',
+        links: {
+            [website]: 'https://copy-paste-css.com/',
+        },
+        icon: 'https://copy-paste-css.com/favicon.ico',
+    },
+    {
         name: 'CoreUI',
         categories: [programming.templates, assets.icons],
         description:
@@ -700,6 +932,16 @@ module.exports = [
             [website]: 'https://coreui.io/',
         },
         icon: 'https://coreui.io/images/favicons/favicon-96x96.png',
+    },
+    {
+        name: 'CouchDB',
+        categories: [infrastructure.databases],
+        description:
+            'CouchDB is open-source software that is based on the common standards to access your important data. It stores data on your server or with a leading service provider of your choice.',
+        links: {
+            [website]: 'https://couchdb.apache.org/',
+        },
+        icon: 'https://couchdb.apache.org/favicon-32x32.png',
     },
     {
         name: 'Coursera',
@@ -752,6 +994,26 @@ module.exports = [
         icon: 'https://flukeout.github.io/favicon.png',
     },
     {
+        name: 'CSS Gradient',
+        categories: [uiDesign.color],
+        description:
+            'As a free css gradient generator tool, this website lets you create a colorful gradient background for your website, blog, or social media profile.',
+        links: {
+            [website]: 'https://cssgradient.io/',
+        },
+        icon: 'https://cssgradient.io/images/favicon-23859487.png',
+    },
+    {
+        name: 'CSS Layout',
+        description: 'A collection of popular layouts and patterns made with CSS',
+        categories: [programming.codeSnippets, programming.learn],
+        keywords: ['CSS layout', 'CSS pattern', 'CSS UI pattern'],
+        links: {
+            [website]: 'https://csslayout.io/',
+        },
+        icon: 'https://csslayout.io/assets/favicon.png',
+    },
+    {
         name: 'CSS Layout News',
         categories: [programming.newsletters],
         description: 'A weekly collection of tutorials, news and information on all things CSS Layout.',
@@ -770,6 +1032,29 @@ module.exports = [
             [website]: 'https://cssnectar.com//',
         },
         icon: 'https://i0.wp.com/cssnectar.com/wp-content/uploads/2016/04/favicon.png?fit=47%2C47&ssl=1',
+    },
+    {
+        name: 'CSS Reference',
+        categories: [programming.docsAndCheatsheets],
+        description:
+            'CSS Reference is a free visual guide to CSS. It features the most popular properties, and explains them with illustrated and animated examples.',
+        links: {
+            [website]: 'https://cssreference.io/',
+        },
+        icon: 'https://cssreference.io/favicons/favicon-32x32.png',
+    },
+    {
+        name: 'CSS Scan',
+        categories: [toolsAndUtilities.browsersAndExtensions],
+        description:
+            'Goodbye to "Inspect Element" — Visualize the CSS of any element you hover over, instantly, and copy its entire rules with a single click.',
+        links: {
+            [website]: 'https://getcssscan.com/',
+            [facebook]: 'https://www.facebook.com/cssscan/',
+            [twitter]: 'https://twitter.com/cssscan',
+            [instagram]: 'https://instagram.com/cssscan',
+        },
+        icon: 'https://getcssscan.com/favicon-32x32.png',
     },
     {
         name: 'CSS Weekly',
@@ -816,6 +1101,16 @@ module.exports = [
             [website]: 'https://chrome.google.com/webstore/detail/cssviewer/ggfgijbpiheegefliciemofobhmofgce',
         },
         icon: 'https://ssl.gstatic.com/chrome/webstore/images/icon_96px.png',
+    },
+    {
+        name: 'Customer.io',
+        categories: [indieHacking.utilities],
+        description:
+            'With Customer.io, send targeted emails, push notifications, and SMS to lower churn, create stronger relationships, and drive subscriptions.',
+        links: {
+            [website]: 'https://customer.io/',
+        },
+        icon: 'https://customer.io/wp-content/uploads/2019/01/customer-io-touchicon-180.png',
     },
     {
         name: 'Cypress',

@@ -13,15 +13,26 @@ module.exports = {
         podcasts: 'Blockchain/Podcasts',
     },
 
+    community: {
+        blogsAndForums: 'Community/Blogs & Forums',
+        personalWebsites: 'Community/Personal Websites',
+        hacktoberfest: 'Community/Hacktoberfest',
+    },
+
     indieHacking: {
         books: 'Indie Hacking/Books',
+        marketing: 'Indie Hacking/Marketing',
         platforms: 'Indie Hacking/Platforms',
         podcasts: 'Indie Hacking/Podcasts',
         utilities: 'Indie Hacking/Utilities',
     },
 
     infrastructure: {
+        auth: 'Infrastructure/Auth',
+        cloudComputing: 'Infrastructure/Cloud Computing',
+        databases: 'Infrastructure/Databases',
         hosting: 'Infrastructure/Hosting',
+        serverless: 'Infrastructure/Serverless',
     },
 
     jobs: {
@@ -34,15 +45,16 @@ module.exports = {
 
     programming: {
         animations: 'Programming/Animations',
-        apiBuilding: 'Programming/API Building',
         books: 'Programming/Books',
         charts: 'Programming/Charts',
         codeChallenges: 'Programming/Code Challenges',
+        codeGenerators: 'Programming/Code Generators',
         codeSnippets: 'Programming/Code Snippets',
-        databases: 'Programming/Databases',
         docsAndCheatsheets: 'Programming/Docs & Cheatsheets',
         javascript: {
             react: 'Programming/JavaScript/React',
+            tooling: 'Programming/JavaScript/Tooling',
+            utilities: 'Programming/JavaScript/Utilities',
         },
         learn: 'Programming/Learn',
         newsletters: 'Programming/Newsletters',
@@ -53,28 +65,26 @@ module.exports = {
         youtubeChannels: 'Programming/YouTube Channels',
     },
 
-    readingAndWriting: {
-        learn: 'Reading & Writing/Learn',
-        platforms: 'Reading & Writing/Platforms',
-        utilities: 'Reading & Writing/Utilities',
-    },
-
     toolsAndUtilities: {
         accessibility: 'Tools & Utilities/Accessibility',
         analytics: 'Tools & Utilities/Analytics',
+        apiBuilding: 'Tools & Utilities/API Building',
         browsersAndExtensions: 'Tools & Utilities/Browsers & Extensions',
+        commandLine: 'Tools & Utilities/Command Line',
+        domains: 'Tools & Utilities/Domains',
         editorsAndExtensions: 'Tools & Utilities/Editors & Extensions',
         general: 'Tools & Utilities/General',
         imageAndVideoEditing: 'Tools & Utilities/Image & Video Editing',
         performance: 'Tools & Utilities/Performance',
-        publicApis: 'Tools & Utilities/Public APIs',
         seo: 'Tools & Utilities/SEO',
         typing: 'Tools & Utilities/Typing',
+        webScraping: 'Tools & Utilities/Web Scraping',
         websiteBuilders: 'Tools & Utilities/Website Builders',
+        writing: 'Tools & Utilities/Writing',
     },
 
     uiDesign: {
-        colorPalettes: 'UI Design/Color Palettes',
+        color: 'UI Design/Color',
         inspiration: 'UI Design/Inspiration',
         learn: 'UI Design/Learn',
         prototyping: 'UI Design/Prototyping',

@@ -1,5 +1,5 @@
-const { uiDesign, infrastructure, toolsAndUtilities, assets, jobs } = require('../constants/categories')
-const { website } = require('../constants/links')
+const { uiDesign, infrastructure, toolsAndUtilities, assets, jobs, programming } = require('../constants/categories')
+const { website, github } = require('../constants/links')
 
 module.exports = [
     {
@@ -11,6 +11,15 @@ module.exports = [
             [website]: 'https://vectr.com/',
         },
         icon: 'https://vectr.com/images/temp-favicon.png',
+    },
+    {
+        name: 'Vemto',
+        categories: [programming.codeGenerators],
+        description: 'Design and generate Laravel/PHP applications in minutes with this desktop tool',
+        links: {
+            [website]: 'https://vemto.app/',
+        },
+        icon: 'https://vemto.app/favicon.png',
     },
     {
         name: 'Vercel',
@@ -44,6 +53,16 @@ module.exports = [
         icon: 'https://vim-adventures.com/favicon.ico',
     },
     {
+        name: 'Visiwig',
+        categories: [assets.icons, assets.illustrations],
+        description:
+            'We provide visuals for busy designers. Visiwig is a place to find design inspiration, explore creative tools, and shop for timesaving graphics.',
+        links: {
+            [website]: 'https://www.visiwig.com/',
+        },
+        icon: 'https://www.visiwig.com/favicon-32x32.png',
+    },
+    {
         name: 'Visual Studio Code',
         categories: [toolsAndUtilities.editorsAndExtensions],
         description:
@@ -61,6 +80,17 @@ module.exports = [
             [website]: 'https://visualhunt.com/',
         },
         icon: 'https://visualhunt.com/favicon.ico',
+    },
+    {
+        name: 'Vue.js devtools',
+        description: 'Browser devtools extension for debugging Vue.js applications',
+        categories: [toolsAndUtilities.browsersAndExtensions],
+        links: {
+            [website]: 'https://devtools.vuejs.org/',
+            [github]: 'https://github.com/vuejs/devtools',
+        },
+        icon: 'https://vuejs.org/images/icons/favicon-96x96.png',
+        keywords: ['dev tools', 'Vue', 'debugging', 'extension', 'browser extension']
     },
     {
         name: 'VueJobs',

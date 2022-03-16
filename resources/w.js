@@ -1,5 +1,5 @@
-const { programming, toolsAndUtilities, jobs, uiDesign, readingAndWriting } = require('../constants/categories')
-const { website, youtube } = require('../constants/links')
+const { programming, toolsAndUtilities, jobs, uiDesign, community, infrastructure } = require('../constants/categories')
+const { website, youtube, twitter, facebook, github, discord } = require('../constants/links')
 
 module.exports = [
     {
@@ -63,6 +63,20 @@ module.exports = [
         icon: 'https://www.wappalyzer.com/apple-touch-icon.png',
     },
     {
+        name: 'Warrant',
+        categories: [infrastructure.auth],
+        description:
+            'Hosted enterprise-grade authorization and access control service for your apps.',
+        links: {
+            [website]: 'https://warrant.dev/',
+            [discord]: 'https://discord.gg/QNCMKWzqET',
+            [github]: 'https://github.com/warrant-dev',
+            [twitter]: 'https://twitter.com/warrant_dev',
+        },
+        icon: 'https://warrant.dev/apple-touch-icon.png',
+        keywords: ['auth', 'authorization', 'authz', 'access control'],
+    },
+    {
         name: 'Wave',
         categories: [toolsAndUtilities.general],
         description: 'Free invoicing & accounting software with credit card processing & payroll services.',
@@ -80,6 +94,16 @@ module.exports = [
             [website]: 'https://wave.webaim.org/',
         },
         icon: 'https://wave.webaim.org/favicon.ico',
+    },
+    {
+        name: 'Web Design Inspiration',
+        categories: [uiDesign.inspiration],
+        description:
+            'Visit the #1 Inspiration Gallery. Everyday, we help Webdesigners, Agencies and Entrepreneurs to be inspired for their next web design project.',
+        links: {
+            [website]: 'https://www.webdesign-inspiration.com/',
+        },
+        icon: 'https://www.webdesign-inspiration.com/favicon.ico',
     },
     {
         name: 'We Work Remotely',
@@ -201,6 +225,22 @@ module.exports = [
         icon: 'https://ssl.gstatic.com/chrome/webstore/images/icon_96px.png',
     },
     {
+        name: 'Windframe',
+        categories: [toolsAndUtilities.websiteBuilders],
+        description:
+            'Rapidly Build and Prototype responsive websites using a drag and drop Tailwind CSS website builder',
+        keywords: [
+            'website builder',
+            'tailwind css builder',
+            'drag and drop builder',
+        ],
+        links: {
+            [website]: 'https://www.devwares.com/windframe/',
+        },
+        icon:
+            'https://windframe.devwares.com/devwaresIcon.png',
+    },
+    {
         name: 'Wix',
         categories: [toolsAndUtilities.websiteBuilders],
         description:
@@ -241,12 +281,25 @@ module.exports = [
     },
     {
         name: 'Writty',
-        categories: [readingAndWriting.utilities],
+        categories: [toolsAndUtilities.writing],
         description: 'A simple writing app and text editor to help you focus on what matters.',
         keywords: ['writing app', 'text editor', 'wysiwyg'],
         links: {
             [website]: 'https://writtyapp.com/',
         },
         icon: 'https://writtyapp.com/images/favicon.png',
+    },
+    {
+        name: 'wweb.dev',
+        categories: [community.blogsAndForums],
+        description:
+            'Stay up to date with weekly updates, get resources for your next projects abd read articles and tutorials about web development.',
+        links: {
+            [website]: 'https://wweb.dev/',
+            [twitter]: 'https://twitter.com/wweb_dev',
+            [facebook]: 'https://www.facebook.com/wweb.dev.blog',
+            [github]: 'https://github.com/wwebdev',
+        },
+        icon: 'https://wweb.dev/favicon.ico',
     },
 ]

@@ -1,5 +1,7 @@
 module.exports = {
     applePodcasts: 'Apple Podcasts',
+    codepen: 'CodePen',
+    discord: 'Discord',
     facebook: 'Facebook',
     github: 'GitHub',
     googlePodcasts: 'Google Podcasts',
@@ -9,6 +11,7 @@ module.exports = {
     linkedin: 'LinkedIn',
     npm: 'npm',
     productHunt: 'Product Hunt',
+    slack: 'Slack',
     spotify: 'Spotify',
     twitch: 'Twitch',
     twitter: 'Twitter',

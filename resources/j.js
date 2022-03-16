@@ -1,5 +1,5 @@
 const { assets, programming, jobs } = require('../constants/categories')
-const { website } = require('../constants/links')
+const { website, github } = require('../constants/links')
 
 module.exports = [
     {
@@ -49,6 +49,15 @@ module.exports = [
             [website]: 'https://javascriptjob.xyz/',
         },
         icon: 'https://javascriptjob.xyz/img/icons/favicon-32x32.png',
+    },
+    {
+        name: 'JavaScript for impatient programmers',
+        categories: [programming.books],
+        description:
+            'This book makes JavaScript less challenging to learn for newcomers, by offering a modern view that is as consistent as possible.',
+        links: {
+            [website]: 'https://exploringjs.com/impatient-js/toc.html',
+        },
     },
     {
         name: 'JavaScript Info',
@@ -144,6 +153,17 @@ module.exports = [
             [website]: 'https://jsremotely.com/',
         },
         icon: 'https://jsremotely.com/static/media/favicon-32x32.png',
+    },
+    {
+        name: 'JSbooks',
+        categories: [programming.books],
+        description:
+            'Directory of free JavaScript ebooks. Contribute to revolunet/JSbooks development by creating an account on GitHub.',
+        links: {
+            [website]: 'https://jsbooks.revolunet.com/',
+            [github]: 'https://github.com/revolunet/JSbooks',
+        },
+        icon: 'https://jsbooks.revolunet.com/img/ico/apple-touch-icon-114-precomposed.png',
     },
     {
         name: 'JustRemote',
