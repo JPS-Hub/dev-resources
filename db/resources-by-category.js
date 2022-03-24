@@ -418,22 +418,6 @@ module.exports = {
         },
         {
             "links": {
-                "Website": "https://affirmations.dev/"
-            },
-            "public_api_fields": {
-                "auth": "",
-                "https": true,
-                "cors": "unknown"
-            },
-            "name": "Affirmations",
-            "description": "Generate Stuart Smalley Affirmations",
-            "categories": [
-                "Public APIs/All",
-                "Public APIs/Personality"
-            ]
-        },
-        {
-            "links": {
                 "Website": "https://developers.aftership.com/reference/quick-start"
             },
             "public_api_fields": {
@@ -1906,22 +1890,6 @@ module.exports = {
         },
         {
             "links": {
-                "Website": "https://bhagavadgita.io/api"
-            },
-            "public_api_fields": {
-                "auth": "OAuth",
-                "https": true,
-                "cors": "yes"
-            },
-            "name": "Bhagavad Gita",
-            "description": "Bhagavad Gita text",
-            "categories": [
-                "Public APIs/All",
-                "Public APIs/Books"
-            ]
-        },
-        {
-            "links": {
                 "Website": "https://docs.bhagavadgitaapi.in"
             },
             "public_api_fields": {
@@ -1931,6 +1899,22 @@ module.exports = {
             },
             "name": "Bhagavad Gita",
             "description": "Open Source Shrimad Bhagavad Gita API including 21+ authors translation in Sanskrit/English/Hindi",
+            "categories": [
+                "Public APIs/All",
+                "Public APIs/Books"
+            ]
+        },
+        {
+            "links": {
+                "Website": "https://bhagavadgita.io/api"
+            },
+            "public_api_fields": {
+                "auth": "OAuth",
+                "https": true,
+                "cors": "yes"
+            },
+            "name": "Bhagavad Gita",
+            "description": "Bhagavad Gita text",
             "categories": [
                 "Public APIs/All",
                 "Public APIs/Books"
@@ -3890,22 +3874,6 @@ module.exports = {
         },
         {
             "links": {
-                "Website": "https://cloudmersive.com/validate-api"
-            },
-            "public_api_fields": {
-                "auth": "apiKey",
-                "https": true,
-                "cors": "yes"
-            },
-            "name": "Cloudmersive Validate",
-            "description": "Validate email addresses, phone numbers, VAT numbers and domain names",
-            "categories": [
-                "Public APIs/All",
-                "Public APIs/Email"
-            ]
-        },
-        {
-            "links": {
                 "Website": "https://cloudmersive.com/phone-number-validation-API"
             },
             "public_api_fields": {
@@ -3918,6 +3886,22 @@ module.exports = {
             "categories": [
                 "Public APIs/All",
                 "Public APIs/Phone"
+            ]
+        },
+        {
+            "links": {
+                "Website": "https://cloudmersive.com/validate-api"
+            },
+            "public_api_fields": {
+                "auth": "apiKey",
+                "https": true,
+                "cors": "yes"
+            },
+            "name": "Cloudmersive Validate",
+            "description": "Validate email addresses, phone numbers, VAT numbers and domain names",
+            "categories": [
+                "Public APIs/All",
+                "Public APIs/Email"
             ]
         },
         {
@@ -3966,6 +3950,22 @@ module.exports = {
             "categories": [
                 "Public APIs/All",
                 "Public APIs/Environment"
+            ]
+        },
+        {
+            "links": {
+                "Website": "https://codedetectionapi.runtime.dev"
+            },
+            "public_api_fields": {
+                "auth": "OAuth",
+                "https": true,
+                "cors": "unknown"
+            },
+            "name": "Code Detection API",
+            "description": "Detect, label, format and enrich the code in your app or in your data pipeline",
+            "categories": [
+                "Public APIs/All",
+                "Public APIs/Text Analysis"
             ]
         },
         {
@@ -4706,22 +4706,6 @@ module.exports = {
         },
         {
             "links": {
-                "Website": "https://covid19api.com/"
-            },
-            "public_api_fields": {
-                "auth": "",
-                "https": true,
-                "cors": "yes"
-            },
-            "name": "Covid-19",
-            "description": "Covid 19 spread, infection and recovery",
-            "categories": [
-                "Public APIs/All",
-                "Public APIs/Health"
-            ]
-        },
-        {
-            "links": {
                 "Website": "https://github.com/M-Media-Group/Covid-19-API"
             },
             "public_api_fields": {
@@ -4731,6 +4715,22 @@ module.exports = {
             },
             "name": "Covid-19",
             "description": "Covid 19 cases, deaths and recovery per country",
+            "categories": [
+                "Public APIs/All",
+                "Public APIs/Health"
+            ]
+        },
+        {
+            "links": {
+                "Website": "https://covid19api.com/"
+            },
+            "public_api_fields": {
+                "auth": "",
+                "https": true,
+                "cors": "yes"
+            },
+            "name": "Covid-19",
+            "description": "Covid 19 spread, infection and recovery",
             "categories": [
                 "Public APIs/All",
                 "Public APIs/Health"
@@ -7298,6 +7298,22 @@ module.exports = {
         },
         {
             "links": {
+                "Website": "https://ulvis.net/developer.html"
+            },
+            "public_api_fields": {
+                "auth": "",
+                "https": true,
+                "cors": "unknown"
+            },
+            "name": "Free Url Shortener",
+            "description": "Free URL Shortener offers a powerful API to interact with other sites",
+            "categories": [
+                "Public APIs/All",
+                "Public APIs/URL Shorteners"
+            ]
+        },
+        {
+            "links": {
                 "Website": "https://freeforexapi.com/Home/Api"
             },
             "public_api_fields": {
@@ -9154,6 +9170,38 @@ module.exports = {
         },
         {
             "links": {
+                "Website": "https://iplocation.hirak.site/"
+            },
+            "public_api_fields": {
+                "auth": "apiKey",
+                "https": true,
+                "cors": "unknown"
+            },
+            "name": "Hirak IP to Country",
+            "description": "Ip to location with country code, currency code & currency name, fast response, unlimited requests",
+            "categories": [
+                "Public APIs/All",
+                "Public APIs/Geocoding"
+            ]
+        },
+        {
+            "links": {
+                "Website": "https://ocr.hirak.site/"
+            },
+            "public_api_fields": {
+                "auth": "apiKey",
+                "https": true,
+                "cors": "unknown"
+            },
+            "name": "Hirak OCR",
+            "description": "Image to text -text recognition- from image more than 100 language, accurate, unlimited requests",
+            "categories": [
+                "Public APIs/All",
+                "Public APIs/Text Analysis"
+            ]
+        },
+        {
+            "links": {
                 "Website": "https://translate.hirak.site/"
             },
             "public_api_fields": {
@@ -10946,22 +10994,6 @@ module.exports = {
         },
         {
             "links": {
-                "Website": "https://kawalcorona.com/api/"
-            },
-            "public_api_fields": {
-                "auth": "",
-                "https": true,
-                "cors": "unknown"
-            },
-            "name": "Kawal Corona",
-            "description": "ID COVID data, include death, positive case and recover",
-            "categories": [
-                "Public APIs/All",
-                "Public APIs/Health"
-            ]
-        },
-        {
-            "links": {
                 "Website": "https://keen.io/"
             },
             "public_api_fields": {
@@ -12450,22 +12482,6 @@ module.exports = {
         },
         {
             "links": {
-                "Website": "https://stitti.github.io/MFaaS"
-            },
-            "public_api_fields": {
-                "auth": "",
-                "https": true,
-                "cors": "no"
-            },
-            "name": "MFaaS",
-            "description": "Modern Family as a Service: API for receiving quotes and actors",
-            "categories": [
-                "Public APIs/All",
-                "Public APIs/Video"
-            ]
-        },
-        {
-            "links": {
                 "Website": "http://mgnet.me/api.html"
             },
             "public_api_fields": {
@@ -13506,22 +13522,6 @@ module.exports = {
         },
         {
             "links": {
-                "Website": "https://github.com/gadael/icsdb"
-            },
-            "public_api_fields": {
-                "auth": "",
-                "https": true,
-                "cors": "unknown"
-            },
-            "name": "Non-Working Days",
-            "description": "Database of ICS files for non working days",
-            "categories": [
-                "Public APIs/All",
-                "Public APIs/Calendar"
-            ]
-        },
-        {
-            "links": {
                 "Website": "https://isdayoff.ru"
             },
             "public_api_fields": {
@@ -13531,6 +13531,22 @@ module.exports = {
             },
             "name": "Non-Working Days",
             "description": "Simple REST API for checking working, non-working or short days for Russia, CIS, USA and other",
+            "categories": [
+                "Public APIs/All",
+                "Public APIs/Calendar"
+            ]
+        },
+        {
+            "links": {
+                "Website": "https://github.com/gadael/icsdb"
+            },
+            "public_api_fields": {
+                "auth": "",
+                "https": true,
+                "cors": "unknown"
+            },
+            "name": "Non-Working Days",
+            "description": "Database of ICS files for non working days",
             "categories": [
                 "Public APIs/All",
                 "Public APIs/Calendar"
@@ -13682,22 +13698,6 @@ module.exports = {
         },
         {
             "links": {
-                "Website": "http://numbersapi.com"
-            },
-            "public_api_fields": {
-                "auth": "",
-                "https": false,
-                "cors": "no"
-            },
-            "name": "Numbers",
-            "description": "Facts about numbers",
-            "categories": [
-                "Public APIs/All",
-                "Public APIs/Science & Math"
-            ]
-        },
-        {
-            "links": {
                 "Website": "https://math.tools/api/numbers/"
             },
             "public_api_fields": {
@@ -13707,6 +13707,22 @@ module.exports = {
             },
             "name": "Numbers",
             "description": "Number of the day, random number, number facts and anything else you want to do with numbers",
+            "categories": [
+                "Public APIs/All",
+                "Public APIs/Science & Math"
+            ]
+        },
+        {
+            "links": {
+                "Website": "http://numbersapi.com"
+            },
+            "public_api_fields": {
+                "auth": "",
+                "https": false,
+                "cors": "no"
+            },
+            "name": "Numbers",
+            "description": "Facts about numbers",
             "categories": [
                 "Public APIs/All",
                 "Public APIs/Science & Math"
@@ -16130,6 +16146,22 @@ module.exports = {
         },
         {
             "links": {
+                "Website": "https://api.whenisthenextboardexam.com/docs/"
+            },
+            "public_api_fields": {
+                "auth": "",
+                "https": true,
+                "cors": "yes"
+            },
+            "name": "PRC Exam Schedule",
+            "description": "Unofficial Philippine Professional Regulation Commission's examination schedule",
+            "categories": [
+                "Public APIs/All",
+                "Public APIs/Government"
+            ]
+        },
+        {
+            "links": {
                 "Website": "https://rapidapi.com/heisenbug/api/premier-league-live-scores/"
             },
             "public_api_fields": {
@@ -16386,22 +16418,6 @@ module.exports = {
         },
         {
             "links": {
-                "Website": "http://goqr.me/api/"
-            },
-            "public_api_fields": {
-                "auth": "",
-                "https": true,
-                "cors": "unknown"
-            },
-            "name": "QR code",
-            "description": "Generate and decode / read QR code graphics",
-            "categories": [
-                "Public APIs/All",
-                "Public APIs/Development"
-            ]
-        },
-        {
-            "links": {
                 "Website": "https://www.qrtag.net/api/"
             },
             "public_api_fields": {
@@ -16411,6 +16427,22 @@ module.exports = {
             },
             "name": "QR code",
             "description": "Create an easy to read QR code and URL shortener",
+            "categories": [
+                "Public APIs/All",
+                "Public APIs/Development"
+            ]
+        },
+        {
+            "links": {
+                "Website": "http://goqr.me/api/"
+            },
+            "public_api_fields": {
+                "auth": "",
+                "https": true,
+                "cors": "unknown"
+            },
+            "name": "QR code",
+            "description": "Generate and decode / read QR code graphics",
             "categories": [
                 "Public APIs/All",
                 "Public APIs/Development"
@@ -18290,22 +18322,6 @@ module.exports = {
         },
         {
             "links": {
-                "Website": "https://github.com/r-spacex/SpaceX-API"
-            },
-            "public_api_fields": {
-                "auth": "",
-                "https": true,
-                "cors": "no"
-            },
-            "name": "SpaceX",
-            "description": "Company, vehicle, launchpad and launch data",
-            "categories": [
-                "Public APIs/All",
-                "Public APIs/Science & Math"
-            ]
-        },
-        {
-            "links": {
                 "Website": "https://api.spacex.land/graphql/"
             },
             "public_api_fields": {
@@ -18315,6 +18331,22 @@ module.exports = {
             },
             "name": "SpaceX",
             "description": "GraphQL, Company, Ships, launchpad and launch data",
+            "categories": [
+                "Public APIs/All",
+                "Public APIs/Science & Math"
+            ]
+        },
+        {
+            "links": {
+                "Website": "https://github.com/r-spacex/SpaceX-API"
+            },
+            "public_api_fields": {
+                "auth": "",
+                "https": true,
+                "cors": "no"
+            },
+            "name": "SpaceX",
+            "description": "Company, vehicle, launchpad and launch data",
             "categories": [
                 "Public APIs/All",
                 "Public APIs/Science & Math"
@@ -18898,22 +18930,6 @@ module.exports = {
         },
         {
             "links": {
-                "Website": "https://swapi.dev/"
-            },
-            "public_api_fields": {
-                "auth": "",
-                "https": true,
-                "cors": "yes"
-            },
-            "name": "SWAPI",
-            "description": "All the Star Wars data you've ever wanted",
-            "categories": [
-                "Public APIs/All",
-                "Public APIs/Video"
-            ]
-        },
-        {
-            "links": {
                 "Website": "https://www.swapi.tech"
             },
             "public_api_fields": {
@@ -18923,6 +18939,22 @@ module.exports = {
             },
             "name": "SWAPI",
             "description": "All things Star Wars",
+            "categories": [
+                "Public APIs/All",
+                "Public APIs/Video"
+            ]
+        },
+        {
+            "links": {
+                "Website": "https://swapi.dev/"
+            },
+            "public_api_fields": {
+                "auth": "",
+                "https": true,
+                "cors": "yes"
+            },
+            "name": "SWAPI",
+            "description": "All the Star Wars data you've ever wanted",
             "categories": [
                 "Public APIs/All",
                 "Public APIs/Video"
@@ -25551,6 +25583,22 @@ module.exports = {
         },
         {
             "links": {
+                "Website": "https://ulvis.net/developer.html"
+            },
+            "public_api_fields": {
+                "auth": "",
+                "https": true,
+                "cors": "unknown"
+            },
+            "name": "Free Url Shortener",
+            "description": "Free URL Shortener offers a powerful API to interact with other sites",
+            "categories": [
+                "Public APIs/All",
+                "Public APIs/URL Shorteners"
+            ]
+        },
+        {
+            "links": {
                 "Website": "https://github.blog/2011-11-10-git-io-github-url-shortener/"
             },
             "public_api_fields": {
@@ -27185,22 +27233,6 @@ module.exports = {
         },
         {
             "links": {
-                "Website": "http://goqr.me/api/"
-            },
-            "public_api_fields": {
-                "auth": "",
-                "https": true,
-                "cors": "unknown"
-            },
-            "name": "QR code",
-            "description": "Generate and decode / read QR code graphics",
-            "categories": [
-                "Public APIs/All",
-                "Public APIs/Development"
-            ]
-        },
-        {
-            "links": {
                 "Website": "https://www.qrtag.net/api/"
             },
             "public_api_fields": {
@@ -27210,6 +27242,22 @@ module.exports = {
             },
             "name": "QR code",
             "description": "Create an easy to read QR code and URL shortener",
+            "categories": [
+                "Public APIs/All",
+                "Public APIs/Development"
+            ]
+        },
+        {
+            "links": {
+                "Website": "http://goqr.me/api/"
+            },
+            "public_api_fields": {
+                "auth": "",
+                "https": true,
+                "cors": "unknown"
+            },
+            "name": "QR code",
+            "description": "Generate and decode / read QR code graphics",
             "categories": [
                 "Public APIs/All",
                 "Public APIs/Development"
@@ -29712,22 +29760,6 @@ module.exports = {
         },
         {
             "links": {
-                "Website": "https://bhagavadgita.io/api"
-            },
-            "public_api_fields": {
-                "auth": "OAuth",
-                "https": true,
-                "cors": "yes"
-            },
-            "name": "Bhagavad Gita",
-            "description": "Bhagavad Gita text",
-            "categories": [
-                "Public APIs/All",
-                "Public APIs/Books"
-            ]
-        },
-        {
-            "links": {
                 "Website": "https://docs.bhagavadgitaapi.in"
             },
             "public_api_fields": {
@@ -29737,6 +29769,22 @@ module.exports = {
             },
             "name": "Bhagavad Gita",
             "description": "Open Source Shrimad Bhagavad Gita API including 21+ authors translation in Sanskrit/English/Hindi",
+            "categories": [
+                "Public APIs/All",
+                "Public APIs/Books"
+            ]
+        },
+        {
+            "links": {
+                "Website": "https://bhagavadgita.io/api"
+            },
+            "public_api_fields": {
+                "auth": "OAuth",
+                "https": true,
+                "cors": "yes"
+            },
+            "name": "Bhagavad Gita",
+            "description": "Bhagavad Gita text",
             "categories": [
                 "Public APIs/All",
                 "Public APIs/Books"
@@ -31089,6 +31137,22 @@ module.exports = {
         },
         {
             "links": {
+                "Website": "https://iplocation.hirak.site/"
+            },
+            "public_api_fields": {
+                "auth": "apiKey",
+                "https": true,
+                "cors": "unknown"
+            },
+            "name": "Hirak IP to Country",
+            "description": "Ip to location with country code, currency code & currency name, fast response, unlimited requests",
+            "categories": [
+                "Public APIs/All",
+                "Public APIs/Geocoding"
+            ]
+        },
+        {
+            "links": {
                 "Website": "https://geodata.gov.hk/gs/"
             },
             "public_api_fields": {
@@ -32133,22 +32197,6 @@ module.exports = {
         },
         {
             "links": {
-                "Website": "https://github.com/gadael/icsdb"
-            },
-            "public_api_fields": {
-                "auth": "",
-                "https": true,
-                "cors": "unknown"
-            },
-            "name": "Non-Working Days",
-            "description": "Database of ICS files for non working days",
-            "categories": [
-                "Public APIs/All",
-                "Public APIs/Calendar"
-            ]
-        },
-        {
-            "links": {
                 "Website": "https://isdayoff.ru"
             },
             "public_api_fields": {
@@ -32158,6 +32206,22 @@ module.exports = {
             },
             "name": "Non-Working Days",
             "description": "Simple REST API for checking working, non-working or short days for Russia, CIS, USA and other",
+            "categories": [
+                "Public APIs/All",
+                "Public APIs/Calendar"
+            ]
+        },
+        {
+            "links": {
+                "Website": "https://github.com/gadael/icsdb"
+            },
+            "public_api_fields": {
+                "auth": "",
+                "https": true,
+                "cors": "unknown"
+            },
+            "name": "Non-Working Days",
+            "description": "Database of ICS files for non working days",
             "categories": [
                 "Public APIs/All",
                 "Public APIs/Calendar"
@@ -35446,22 +35510,6 @@ module.exports = {
             },
             "name": "Advice Slip",
             "description": "Generate random advice slips",
-            "categories": [
-                "Public APIs/All",
-                "Public APIs/Personality"
-            ]
-        },
-        {
-            "links": {
-                "Website": "https://affirmations.dev/"
-            },
-            "public_api_fields": {
-                "auth": "",
-                "https": true,
-                "cors": "unknown"
-            },
-            "name": "Affirmations",
-            "description": "Generate Stuart Smalley Affirmations",
             "categories": [
                 "Public APIs/All",
                 "Public APIs/Personality"
@@ -39659,22 +39707,6 @@ module.exports = {
         },
         {
             "links": {
-                "Website": "https://stitti.github.io/MFaaS"
-            },
-            "public_api_fields": {
-                "auth": "",
-                "https": true,
-                "cors": "no"
-            },
-            "name": "MFaaS",
-            "description": "Modern Family as a Service: API for receiving quotes and actors",
-            "categories": [
-                "Public APIs/All",
-                "Public APIs/Video"
-            ]
-        },
-        {
-            "links": {
                 "Website": "https://nodejs-quoteapp.herokuapp.com/"
             },
             "public_api_fields": {
@@ -39835,22 +39867,6 @@ module.exports = {
         },
         {
             "links": {
-                "Website": "https://swapi.dev/"
-            },
-            "public_api_fields": {
-                "auth": "",
-                "https": true,
-                "cors": "yes"
-            },
-            "name": "SWAPI",
-            "description": "All the Star Wars data you've ever wanted",
-            "categories": [
-                "Public APIs/All",
-                "Public APIs/Video"
-            ]
-        },
-        {
-            "links": {
                 "Website": "https://www.swapi.tech"
             },
             "public_api_fields": {
@@ -39860,6 +39876,22 @@ module.exports = {
             },
             "name": "SWAPI",
             "description": "All things Star Wars",
+            "categories": [
+                "Public APIs/All",
+                "Public APIs/Video"
+            ]
+        },
+        {
+            "links": {
+                "Website": "https://swapi.dev/"
+            },
+            "public_api_fields": {
+                "auth": "",
+                "https": true,
+                "cors": "yes"
+            },
+            "name": "SWAPI",
+            "description": "All the Star Wars data you've ever wanted",
             "categories": [
                 "Public APIs/All",
                 "Public APIs/Video"
@@ -42243,6 +42275,22 @@ module.exports = {
         },
         {
             "links": {
+                "Website": "https://codedetectionapi.runtime.dev"
+            },
+            "public_api_fields": {
+                "auth": "OAuth",
+                "https": true,
+                "cors": "unknown"
+            },
+            "name": "Code Detection API",
+            "description": "Detect, label, format and enrich the code in your app or in your data pipeline",
+            "categories": [
+                "Public APIs/All",
+                "Public APIs/Text Analysis"
+            ]
+        },
+        {
+            "links": {
                 "Website": "https://detectlanguage.com/"
             },
             "public_api_fields": {
@@ -42284,6 +42332,22 @@ module.exports = {
             },
             "name": "Google Cloud Natural",
             "description": "Natural language understanding technology, including sentiment, entity and syntax analysis",
+            "categories": [
+                "Public APIs/All",
+                "Public APIs/Text Analysis"
+            ]
+        },
+        {
+            "links": {
+                "Website": "https://ocr.hirak.site/"
+            },
+            "public_api_fields": {
+                "auth": "apiKey",
+                "https": true,
+                "cors": "unknown"
+            },
+            "name": "Hirak OCR",
+            "description": "Image to text -text recognition- from image more than 100 language, accurate, unlimited requests",
             "categories": [
                 "Public APIs/All",
                 "Public APIs/Text Analysis"
@@ -44674,22 +44738,6 @@ module.exports = {
         },
         {
             "links": {
-                "Website": "http://numbersapi.com"
-            },
-            "public_api_fields": {
-                "auth": "",
-                "https": false,
-                "cors": "no"
-            },
-            "name": "Numbers",
-            "description": "Facts about numbers",
-            "categories": [
-                "Public APIs/All",
-                "Public APIs/Science & Math"
-            ]
-        },
-        {
-            "links": {
                 "Website": "https://math.tools/api/numbers/"
             },
             "public_api_fields": {
@@ -44699,6 +44747,22 @@ module.exports = {
             },
             "name": "Numbers",
             "description": "Number of the day, random number, number facts and anything else you want to do with numbers",
+            "categories": [
+                "Public APIs/All",
+                "Public APIs/Science & Math"
+            ]
+        },
+        {
+            "links": {
+                "Website": "http://numbersapi.com"
+            },
+            "public_api_fields": {
+                "auth": "",
+                "https": false,
+                "cors": "no"
+            },
+            "name": "Numbers",
+            "description": "Facts about numbers",
             "categories": [
                 "Public APIs/All",
                 "Public APIs/Science & Math"
@@ -44802,22 +44866,6 @@ module.exports = {
         },
         {
             "links": {
-                "Website": "https://github.com/r-spacex/SpaceX-API"
-            },
-            "public_api_fields": {
-                "auth": "",
-                "https": true,
-                "cors": "no"
-            },
-            "name": "SpaceX",
-            "description": "Company, vehicle, launchpad and launch data",
-            "categories": [
-                "Public APIs/All",
-                "Public APIs/Science & Math"
-            ]
-        },
-        {
-            "links": {
                 "Website": "https://api.spacex.land/graphql/"
             },
             "public_api_fields": {
@@ -44827,6 +44875,22 @@ module.exports = {
             },
             "name": "SpaceX",
             "description": "GraphQL, Company, Ships, launchpad and launch data",
+            "categories": [
+                "Public APIs/All",
+                "Public APIs/Science & Math"
+            ]
+        },
+        {
+            "links": {
+                "Website": "https://github.com/r-spacex/SpaceX-API"
+            },
+            "public_api_fields": {
+                "auth": "",
+                "https": true,
+                "cors": "no"
+            },
+            "name": "SpaceX",
+            "description": "Company, vehicle, launchpad and launch data",
             "categories": [
                 "Public APIs/All",
                 "Public APIs/Science & Math"
@@ -49165,6 +49229,22 @@ module.exports = {
         },
         {
             "links": {
+                "Website": "https://api.whenisthenextboardexam.com/docs/"
+            },
+            "public_api_fields": {
+                "auth": "",
+                "https": true,
+                "cors": "yes"
+            },
+            "name": "PRC Exam Schedule",
+            "description": "Unofficial Philippine Professional Regulation Commission's examination schedule",
+            "categories": [
+                "Public APIs/All",
+                "Public APIs/Government"
+            ]
+        },
+        {
+            "links": {
                 "Website": "https://represent.opennorth.ca/"
             },
             "public_api_fields": {
@@ -49508,6 +49588,16 @@ module.exports = {
                 "Website": "https://remoteok.io/"
             },
             "icon": "https://remoteok.io/assets/favicon-96x96.png?2"
+        },
+        {
+            "name": "Remotists.",
+            "categories": [
+                "Jobs/Remote Only"
+            ],
+            "description": "Get Remote Dev Jobs in your mailbox. 35.000+ exciting remote jobs on file from 16000+ top remote companies. Segmented for USA, Europe or Worldwide. Personally selected for you by our experienced remote hiring managers.",
+            "links": {
+                "Website": "https://remotists.com/"
+            }
         },
         {
             "name": "Remotive",
@@ -53053,22 +53143,6 @@ module.exports = {
         },
         {
             "links": {
-                "Website": "https://covid19api.com/"
-            },
-            "public_api_fields": {
-                "auth": "",
-                "https": true,
-                "cors": "yes"
-            },
-            "name": "Covid-19",
-            "description": "Covid 19 spread, infection and recovery",
-            "categories": [
-                "Public APIs/All",
-                "Public APIs/Health"
-            ]
-        },
-        {
-            "links": {
                 "Website": "https://github.com/M-Media-Group/Covid-19-API"
             },
             "public_api_fields": {
@@ -53078,6 +53152,22 @@ module.exports = {
             },
             "name": "Covid-19",
             "description": "Covid 19 cases, deaths and recovery per country",
+            "categories": [
+                "Public APIs/All",
+                "Public APIs/Health"
+            ]
+        },
+        {
+            "links": {
+                "Website": "https://covid19api.com/"
+            },
+            "public_api_fields": {
+                "auth": "",
+                "https": true,
+                "cors": "yes"
+            },
+            "name": "Covid-19",
+            "description": "Covid 19 spread, infection and recovery",
             "categories": [
                 "Public APIs/All",
                 "Public APIs/Health"
@@ -53302,22 +53392,6 @@ module.exports = {
             },
             "name": "Infermedica",
             "description": "NLP based symptom checker and patient triage API for health diagnosis from text",
-            "categories": [
-                "Public APIs/All",
-                "Public APIs/Health"
-            ]
-        },
-        {
-            "links": {
-                "Website": "https://kawalcorona.com/api/"
-            },
-            "public_api_fields": {
-                "auth": "",
-                "https": true,
-                "cors": "unknown"
-            },
-            "name": "Kawal Corona",
-            "description": "ID COVID data, include death, positive case and recover",
             "categories": [
                 "Public APIs/All",
                 "Public APIs/Health"
